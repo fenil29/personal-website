@@ -16,7 +16,7 @@ function App() {
             particles: {
               number: {
                 value: 50
-              },
+              }
             }
           }}
         />
@@ -28,16 +28,16 @@ function App() {
           </div>
 
           <div className="home-icons-div">
-            <div className="home-icon">
-              <a href="https://github.com/fenil29">
+            <a href="https://github.com/fenil29">
+              <div className="home-icon">
                 <Icon type="github" className="home-github-icon" />
-              </a>
-            </div>
-            <div className="home-icon">
-              <a href="https://in.linkedin.com/in/fenil-kaneria-2a76bb153">
+              </div>
+            </a>
+            <a href="https://in.linkedin.com/in/fenil-kaneria-2a76bb153">
+              <div className="home-icon">
                 <Icon type="linkedin" className="home-linkedin-icon" />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

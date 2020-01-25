@@ -72,15 +72,12 @@ h3 {
   text-align: center;
   margin: 10px;
 }
-.home-icon:hover {
-  background-color: white;
-  /* color: #282c34; */
-}
-.home-icon a{
+.home-icon {
   color: rgb(255, 255, 255);
 }
-.home-icon a:hover{
-  color: #282c34;
+.home-icon:hover {
+  background-color: white;
+  color: #282c34 !important;
 }
 
 .progress-bar {
