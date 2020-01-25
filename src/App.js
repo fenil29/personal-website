@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Particles from "react-particles-js";
 
-import { Icon, Progress, Spin } from "antd";
+import { Icon  } from "antd";
 import "antd/dist/antd.css";
 
 function App() {

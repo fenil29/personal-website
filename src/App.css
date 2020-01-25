@@ -30,9 +30,9 @@
   flex-direction: column;
   z-index: 100;
 }
-h1,
-h2,
-h3 {
+.home-text-content h1,
+.home-text-content h2,
+.home-text-content h3 {
   color: white !important;
 }
 .particle-background-content h1 {
@@ -78,10 +78,6 @@ h3 {
 .home-icon:hover {
   background-color: white;
   color: #282c34 !important;
-}
-
-.progress-bar {
-  width: 50%;
 }
 
 @media only screen and (max-width: 850px) {
