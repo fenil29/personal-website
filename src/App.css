@@ -1,5 +1,22 @@
+/* normal mode */
+/* :root {
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --icon-color: #282c34;
+  --icon-hover-color: #ffffff;
+  --icon-hover-background-color: #282c34;
+} */
+/* dark mode */
+:root {
+  --background-color: #282c34;
+  --font-color: #ffffff;
+  --icon-color: #ffffff;
+  --icon-hover-color: #282c34;
+  --icon-hover-background-color: #ffffff;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: var(--background-color);
   height: 100vh;
   width: 100vw;
   /* margin: 0; */
@@ -9,6 +26,27 @@
   justify-content: center;
   color: white; */
 }
+.dark-mode-icon {
+  position: fixed;
+  right: 0;
+  margin: 20px;
+  border: 1px solid var(--font-color);
+  padding: 7px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  z-index: 200;
+}
+.dark-mode-icon:hover {
+  cursor: pointer;
+  background-color: var(--icon-hover-background-color);
+}
+.dark-mode-icon svg {
+  fill: var(--icon-color);
+}
+.dark-mode-icon:hover svg {
+  fill: var(--icon-hover-color);
+}
+
 .particle-background {
   height: 100vh;
   width: 100vw;
@@ -33,13 +71,13 @@
 .home-text-content h1,
 .home-text-content h2,
 .home-text-content h3 {
-  color: white !important;
+  color: var(--font-color) !important;
 }
 .particle-background-content h1 {
   /* color: white; */
   letter-spacing: 20px;
   font-size: 5em;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--font-color);
   line-height: 5rem;
   margin-bottom: 40px;
 }
@@ -64,7 +102,7 @@
 .home-icon {
   /* color: rgb(255, 255, 255); */
   font-size: 30px;
-  border: 1px solid white;
+  border: 1px solid var(--font-color);
   padding: 5px;
   padding-left: 13px;
   padding-right: 13px;
@@ -73,11 +111,11 @@
   margin: 10px;
 }
 .home-icon {
-  color: rgb(255, 255, 255);
+  color: var(--icon-color);
 }
 .home-icon:hover {
-  background-color: white;
-  color: #282c34 !important;
+  background-color: var(--icon-hover-background-color);
+  color: var(--icon-hover-color) !important;
 }
 
 @media only screen and (max-width: 850px) {
