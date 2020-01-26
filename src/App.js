@@ -42,7 +42,12 @@ export class App extends Component {
             params={{
               particles: {
                 number: {
-                  value: 50
+                  value: 50,
+                  density:{
+                    enable:true,
+                    value_area:800
+                  }
+
                 },
                 color: {
                   value: this.state.darkMode ? "#000000" : "#ffffff"
