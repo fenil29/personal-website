@@ -120,25 +120,33 @@
 
 @media only screen and (max-width: 850px) {
   .particle-background-content h1 {
-    font-size: 3em;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .particle-background-content h1 {
-    letter-spacing: 17px;
-
-    font-size: 2em;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .particle-background-content h1 {
-    font-size: 1.7em;
-    letter-spacing: 10px;
+    font-size: 3.5em;
   }
   .particle-background-content h2 {
     font-size: 1.3em;
   }
   .particle-background-content h3 {
     font-size: 1em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .particle-background-content h1 {
+    letter-spacing: 17px;
+    font-size: 3em;
+  }
+  .particle-background-content h2 {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .particle-background-content h1 {
+    font-size: 1.9em;
+    letter-spacing: 10px;
+  }
+  .particle-background-content h2 {
+    font-size: 1.1em;
+  }
+  .particle-background-content h3 {
+    font-size: 0.9em;
   }
 }
