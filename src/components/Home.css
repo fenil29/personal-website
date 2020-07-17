@@ -1,6 +1,6 @@
 
 .App-header {
-    background-color: var(--background-color);
+    background-color: var(--secondary-background-color);
     height: 100vh;
     /* width: calc(100vw - (100vw - 100%)); */
     /* width: 100vw; */
@@ -16,21 +16,22 @@
     position: fixed;
     right: 0;
     margin: 20px;
-    border: 1px solid var(--font-color);
+    border: 1px solid  var(--primary-font-color);
     padding: 7px;
     padding-bottom: 3px;
     border-radius: 5px;
     z-index: 200;
   }
+
+  .dark-mode-icon svg {
+    fill: var(--primary-font-color);
+  }
   .dark-mode-icon:hover {
     cursor: pointer;
-    background-color: var(--icon-hover-background-color);
-  }
-  .dark-mode-icon svg {
-    fill: var(--icon-color);
+    background-color: var(--primary-font-color);
   }
   .dark-mode-icon:hover svg {
-    fill: var(--icon-hover-color);
+    fill: var(--primary-background-color);
   }
   
   .particle-background {
@@ -55,16 +56,16 @@
     flex-direction: column;
     z-index: 100;
   }
-  .home-text-content h1,
+  /* .home-text-content h1,
   .home-text-content h2,
   .home-text-content h3 {
     color: var(--font-color) !important;
-  }
+  } */
   .particle-background-content h1 {
     /* color: white; */
     letter-spacing: 20px;
     font-size: 5em;
-    border-bottom: 1px solid var(--font-color);
+    border-bottom: 1px solid var(--primary-font-color);
     line-height: 5rem;
     margin-bottom: 40px;
   }

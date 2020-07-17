@@ -1,0 +1,60 @@
+.project-card-container {
+  width: 300px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  background-color: var(--secondary-background-color);
+  border-radius: 5px;
+  margin: 20px;
+}
+.project-card-container img {
+  width: 300px;
+}
+.project-card-container .content {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.project-card-container h2 {
+  text-align: center;
+}
+.project-card-container p {
+  text-align: left;
+  height: 150px;
+  overflow: auto;
+}
+.project-card-container button {
+  /* border: 1px solid var(--primary-font-color); */
+  background-color:var(--primary-color);
+  /* background-color: #1d79f2; */
+  color: white !important;
+  border: 0px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.project-card-container button:hover {
+    cursor: pointer;
+  /* background-color: var(--primary-font-color);
+  color: var(--secondary-background-color) !important; */
+}
+.project-card-container .button {
+  text-align: center;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color: #ebebeb; */
+  /* -webkit-border-radius: 10px; */
+  /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  /* border-radius: 10px; */
+  background: #838383;
+}

@@ -8,35 +8,15 @@ function Home() {
   let handleDarkModeClick = () => {
     setDarkMode(!darkMode);
     if (darkMode) {
-      document.documentElement.style.setProperty(
-        "--background-color",
-        " #282c34"
-      );
-      document.documentElement.style.setProperty("--font-color", " #ffffff");
-      document.documentElement.style.setProperty("--icon-color", " #ffffff");
-      document.documentElement.style.setProperty(
-        "--icon-hover-color",
-        " #282c34"
-      );
-      document.documentElement.style.setProperty(
-        "--icon-hover-background-color",
-        " #ffffff"
-      );
+      document.documentElement.style.setProperty("--primary-color", "var(--dark-mode-primary-color)");
+      document.documentElement.style.setProperty("--primary-background-color", "var(--dark-mode-primary-background-color)");
+      document.documentElement.style.setProperty("--secondary-background-color", "var(--dark-mode-secondary-background-color)");
+      document.documentElement.style.setProperty("--primary-font-color", "var(--dark-mode-primary-font-color)");
     } else {
-      document.documentElement.style.setProperty(
-        "--background-color",
-        " #ffffff"
-      );
-      document.documentElement.style.setProperty("--font-color", " #000000");
-      document.documentElement.style.setProperty("--icon-color", " #282c34");
-      document.documentElement.style.setProperty(
-        "--icon-hover-color",
-        " #ffffff"
-      );
-      document.documentElement.style.setProperty(
-        "--icon-hover-background-color",
-        " #282c34"
-      );
+      document.documentElement.style.setProperty("--primary-color", "var(--light-mode-primary-color)");
+      document.documentElement.style.setProperty("--primary-background-color", "var(--light-mode-primary-background-color)");
+      document.documentElement.style.setProperty("--secondary-background-color", "var(--light-mode-secondary-background-color)");
+      document.documentElement.style.setProperty("--primary-font-color", "var(--light-mode-primary-font-color)");
     }
   };
   return (
@@ -47,17 +27,17 @@ function Home() {
         params={{
           particles: {
             number: {
-              value: 50,
+              value:15,
               density: {
                 enable: true,
                 value_area: 800,
               },
             },
             color: {
-              value: darkMode ? "#000000" : "#ffffff",
+              value: darkMode ? "#15202b" : "#ffffff",
             },
             line_linked: {
-              color: darkMode ? "#000000" : "#ffffff",
+              color: darkMode ? "#15202b" : "#ffffff",
             },
           },
         }}
