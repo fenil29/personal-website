@@ -1,0 +1,115 @@
+
+.App-header {
+    background-color: var(--background-color);
+    height: 100vh;
+    /* width: calc(100vw - (100vw - 100%)); */
+    /* width: 100vw; */
+    width: 100%;
+    /* margin: 0; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; */
+  }
+  .dark-mode-icon {
+    position: fixed;
+    right: 0;
+    margin: 20px;
+    border: 1px solid var(--font-color);
+    padding: 7px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    z-index: 200;
+  }
+  .dark-mode-icon:hover {
+    cursor: pointer;
+    background-color: var(--icon-hover-background-color);
+  }
+  .dark-mode-icon svg {
+    fill: var(--icon-color);
+  }
+  .dark-mode-icon:hover svg {
+    fill: var(--icon-hover-color);
+  }
+  
+  .particle-background {
+    height: 100vh;
+    /* width: 100vw; */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+  }
+  .particle-background-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+  }
+  .home-text-content h1,
+  .home-text-content h2,
+  .home-text-content h3 {
+    color: var(--font-color) !important;
+  }
+  .particle-background-content h1 {
+    /* color: white; */
+    letter-spacing: 20px;
+    font-size: 5em;
+    border-bottom: 1px solid var(--font-color);
+    line-height: 5rem;
+    margin-bottom: 40px;
+  }
+  .particle-background-content h2 {
+    line-height: 1rem;
+  }
+  .home-text-content {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  @media only screen and (max-width: 850px) {
+    .particle-background-content h1 {
+      font-size: 3.5em;
+    }
+    .particle-background-content h2 {
+      font-size: 1.3em;
+    }
+    .particle-background-content h3 {
+      font-size: 1em;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .particle-background-content h1 {
+      letter-spacing: 17px;
+      font-size: 3em;
+    }
+    .particle-background-content h2 {
+      font-size: 1em;
+    }
+  }
+  @media only screen and (max-width: 530px) {
+    .particle-background-content h1 {
+      font-size: 1.9em;
+      letter-spacing: 10px;
+    }
+    .particle-background-content h2 {
+      font-size: 1.1em;
+    }
+    .particle-background-content h3 {
+      font-size: 0.9em;
+    }
+  }
+  
