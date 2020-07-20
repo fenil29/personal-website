@@ -12,4 +12,5 @@
 }
 .projects h1{
     text-align: center;
+    color: var(--secondary-font-color) !important;
 }

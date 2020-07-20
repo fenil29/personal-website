@@ -6,9 +6,15 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <div className="projects">
-      <h1>Projects</h1>
+    <div className="projects main-container">
+      <h1>Projects I've Built</h1>
       <div className="projects-container">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />

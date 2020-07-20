@@ -1,0 +1,32 @@
+.footer-container {
+  /* border-top: 1px solid  var(--primary-font-color); */
+  margin-top: 20px;
+}
+.footer-container hr {
+  border: none;
+  height: 1px;
+  background-color: var(--primary-font-color);
+  opacity: 0.2;
+}
+.footer-container .icon-container {
+  text-align: center;
+  margin: 30px;
+}
+.footer-container .icon-container .icon {
+  font-size: 35px;
+  margin: 10px;
+  opacity: 0.8;
+}
+.footer-container .icon-container .icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.footer-container .footer-text {
+  text-align: center;
+  margin: 15px;
+  opacity: 0.8;
+}
+.footer-container .footer-text:hover {
+  cursor: pointer;
+  opacity: 1;
+}
