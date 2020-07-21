@@ -1,0 +1,135 @@
+/* normal mode */
+/* :root {
+
+
+} */
+/* dark mode */
+:root {
+    /* --dark-mode-primary-color: #4C75F2;
+    --dark-mode-primary-background-color: #161625;
+    --dark-mode-secondary-background-color: #1E1E30;
+    --dark-mode-primary-font-color: #ffffff;
+    --dark-mode-primary-font-color-value: 255, 255, 255;
+  
+    --light-mode-primary-color: #4C75F2;
+    --light-mode-primary-background-color: #F6F6F7;
+    --light-mode-secondary-background-color: #ffffff;
+    --light-mode-primary-font-color: #000000;
+    --light-mode-primary-font-color-value: 0, 0, 0; */
+    /* Main */
+    /* --dark-mode-primary-color: #1965c7;
+    --dark-mode-primary-background-color: #15202b;
+    --dark-mode-secondary-background-color: #273644;
+    --dark-mode-primary-font-color: #ffffff;
+    --dark-mode-primary-font-color-value: 255, 255, 255;
+  
+    --light-mode-primary-color: #4582d8;
+    --light-mode-primary-background-color: #f3f3f3;
+    --light-mode-secondary-background-color: #ffffff;
+    --light-mode-primary-font-color: #000000;
+    --light-mode-primary-font-color-value: 0, 0, 0; */
+    --dark-mode-primary-color: #1965c7;
+    --dark-mode-primary-background-color: #0a192f;
+    --dark-mode-secondary-background-color: #172a45;
+    --dark-mode-primary-font-color: #ccd6f6;
+    --dark-mode-secondary-font-color: #ffffff;
+  
+    --light-mode-primary-color: #4582d8;
+    --light-mode-primary-background-color: #f1f3f7;
+    --light-mode-secondary-background-color: #ffffff;
+    --light-mode-primary-font-color: #292929;
+    --light-mode-secondary-font-color: #000000;
+  
+    --primary-color: var(--dark-mode-primary-color);
+    --primary-background-color: var(--dark-mode-primary-background-color);
+    --secondary-background-color: var(--dark-mode-secondary-background-color);
+    --primary-font-color: var(--dark-mode-primary-font-color);
+    --secondary-font-color: var(--dark-mode-secondary-font-color);
+  }
+  
+  *,
+  html,
+  body {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    color: var(--primary-font-color) !important;
+    transition: background-color 500ms linear;
+  }
+  *:focus {
+    outline: none;
+  }
+  html{
+    font-family: sans-serif;
+      line-height: 1.15;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: var(--primary-background-color) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 14px;
+      line-height: 1.5715;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+  }
+  /* Scrollbar Styling
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #c5c5c5;
+  } */
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    /* background-color: #ebebeb; */
+    /* -webkit-border-radius: 10px; */
+    /* border-radius: 10px; */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    /* border-radius: 10px; */
+    background: #838383;
+  }
+  
+  .main-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .main-container {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .main-container {
+      width: 100%;
+    }
+  }
+  
