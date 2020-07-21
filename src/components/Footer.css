@@ -25,8 +25,12 @@
   text-align: center;
   margin: 15px;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-container .footer-text:hover {
   cursor: pointer;
   opacity: 1;
 }
+

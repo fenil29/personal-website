@@ -31,9 +31,14 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
+  text-align: center;
+
 }
 .project-button .icon svg path {
   color: white !important;
+}
+.project-button .icon {
+  font-size: 15px;
 }
 .project-button button:hover {
   cursor: pointer;
@@ -91,6 +96,10 @@
 }
 .project-details-modal-content .content-container button {
   width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 100%;
 }
 .project-details-modal-content .content-container .close-icon {
   position: absolute;

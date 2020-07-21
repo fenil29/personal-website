@@ -2,13 +2,14 @@ import React, { useState } from "react";
 
 import "./ProjectCard.css";
 
-import projectImg from "../asserts/pro.jpg";
 import nodejsSvg from "../asserts/nodejs.svg";
 import reactSvg from "../asserts/react.svg";
 import postgresqlSvg from "../asserts/postgresql.svg";
 import expressSvg from "../asserts/express.svg";
 import appointMeetImg from "../asserts/project-img/appoint-meet.png";
-import { GithubOutlined, LinkOutlined, CloseOutlined } from "@ant-design/icons";
+// import { GithubOutlined, LinkOutlined, CloseOutlined } from "@ant-design/icons";
+import { AiOutlineLink } from "react-icons/ai";
+import {  FaGithub } from "react-icons/fa";
 
 import Modal from "react-modal";
 
@@ -37,12 +38,12 @@ function ProjectCard() {
             <img src={appointMeetImg} alt="project" style={{ width: "100%" }} />
           </div>
           <div className="content-container">
-            <CloseOutlined className="close-icon" onClick={handleCancel} />
+            {/* <CloseOutlined className="close-icon" onClick={handleCancel} /> */}
             <div className="title">
               <h1>Appoint Meet</h1>
               <h3 className="project-type">Web Application</h3>
             </div>
-            <hr/>
+            <hr />
             <div className="project-details-content">
               <div className="project-description">
                 Appoint-Meet is a simple minimal application to manage all
@@ -77,16 +78,13 @@ function ProjectCard() {
             <div className="project-details-button-container">
               <div className="project-button">
                 <button>
-                  <GithubOutlined
-                    style={{ marginRight: "5px" }}
-                    className="icon"
-                  />
+                  <FaGithub style={{ marginRight: "5px" }} className="icon" />
                   View Code
                 </button>
               </div>
               <div className="project-button">
                 <button>
-                  <LinkOutlined
+                  <AiOutlineLink
                     style={{ marginRight: "5px" }}
                     className="icon"
                   />

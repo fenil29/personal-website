@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
-import "antd/dist/antd.css";
 
 import Home from "./components/Home";
 import Projects from "./components/Projects";
