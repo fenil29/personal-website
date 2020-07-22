@@ -2,21 +2,15 @@ import React, { useState } from "react"
 
 import "./ProjectCard.css"
 
-import nodejsSvg from "../asserts/nodejs.svg"
-import reactSvg from "../asserts/react.svg"
-import postgresqlSvg from "../asserts/postgresql.svg"
-import expressSvg from "../asserts/express.svg"
-import appointMeetImg from "../asserts/project-img/appoint-meet.png"
 // import { GithubOutlined, LinkOutlined, CloseOutlined } from "@ant-design/icons";
 import { AiOutlineLink } from "react-icons/ai"
 import { FaGithub } from "react-icons/fa"
 import { MdClose } from "react-icons/md"
 
 import Modal from "react-modal"
-
+import Image from "../components/image"
 function ProjectCard(props) {
   const [visible, setVisible] = useState(false)
-
   let onViewDetails = () => {
     setVisible(true)
     // document.getElementsByClassName("project-card-container").className = "project-card-container-details";
@@ -36,7 +30,9 @@ function ProjectCard(props) {
       >
         <div className="project-details-modal-content">
           <div className="project-img">
-            <img src={appointMeetImg} alt="project" style={{ width: "100%" }} />
+            {/* <img src={appointMeetImg} alt="project" style={{ width: "100%" }} /> */}
+            {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image" /> */}
+            <Image type={"details-image"} filename={"appoint-meet.png"}/>
           </div>
           <div className="content-container">
             <MdClose className="close-icon" onClick={handleCancel} />
@@ -96,7 +92,12 @@ function ProjectCard(props) {
       </Modal>
       <div>
         <div className="project-card-container">
-          <img src={appointMeetImg} alt="project" />
+          {/* <img src={appointMeetImg} alt="project" /> */}
+          {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image"/> */}
+          {/* <CardImgComponents /> */}
+          <Image type={"card-image"} filename={"appoint-meet.png"}/>
+
+
           <div className="content-container">
             <h2>{props.title}</h2>
             <p>{props.descriptionShort}</p>

@@ -7,11 +7,11 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
   /* transition: transform 0.2s ease-in-out; */
 }
-.project-card-container img {
+/* .project-card-container img {
   height: 180px;
   width: 100%;
   object-fit: cover;
-}
+} */
 .project-card-container .content-container {
   padding: 20px;
   padding-top: 10px;

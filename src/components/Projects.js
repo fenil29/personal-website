@@ -14,6 +14,8 @@ let projects=[
   {
     title:"Appoint Meet",
     type:"Web Application",
+    imgName:"appoint-meet.png",
+    // DetailsImage:AppointMeetDetailsImage,
     descriptionShort :"Appoint-Meet is a simple minimal application to manage all appointment scheduling process for business and individuals",
     descriptionLong :"Appoint-Meet is a simple minimal application to manage all appointment scheduling process for business and individuals",
     button:{
@@ -22,23 +24,6 @@ let projects=[
     },
     technologyUsed:[
       {name:"ReactJs",img:reactSvg},
-      {name:"NodeJs",img:nodejsSvg},
-      {name:"ExpressJs",img:expressSvg},
-      {name:"PostgreSQL",img:postgresqlSvg},
-      {name:"JWT",img:jwtSvg},
-    ]
-  },
-  {
-    title:"Park Spot",
-    type:"Mobile Application (cross platform)",
-    descriptionShort :"",
-    descriptionLong :"",
-    button:{
-      viewCodeUrl:"",
-      viewProjectUrl:""
-    },
-    technologyUsed:[
-      {name:"React Native",img:reactSvg},
       {name:"NodeJs",img:nodejsSvg},
       {name:"ExpressJs",img:expressSvg},
       {name:"PostgreSQL",img:postgresqlSvg},

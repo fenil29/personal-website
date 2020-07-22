@@ -13,20 +13,82 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Image = props => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "appoint-meet.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cardImages: allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+          relativeDirectory: { eq: "project-img" }
+        }
+      ) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid (maxHeight: 180){
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+      detailsImages: allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+          relativeDirectory: { eq: "project-img" }
+        }
+      ) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
   `)
+  console.log("props", props)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  // return <Img  fluid={data.placeholderImage.targetImg.fluid}  objectFit="cover" style={{width:"100%"}} alt="project-image"/>
+  if (props.type === "details-image") {
+    let targetImg = data.detailsImages.edges.filter(
+      i => i.node.base === props.filename
+    )[0]
+    return (
+      <Img
+        fluid={targetImg.node.childImageSharp.fluid}
+        objectFit="cover"
+        style={{ width: "100%" }}
+        alt="project-image"
+      />
+    )
+  } else if (props.type === "card-image") {
+    let targetImg = data.cardImages.edges.filter(
+      i => i.node.base === props.filename
+    )[0]
+    return (
+      <Img
+        fluid={targetImg.node.childImageSharp.fluid}
+        objectFit="cover"
+        style={{ height: "180px" }}
+        alt="project-image"
+      />
+    )
+  }
+  console.log(data.images)
 }
+
 
 export default Image
