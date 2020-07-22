@@ -1,11 +1,7 @@
 .technologies-container {
   margin-top: 40px;
 }
-.technologies-container .main-title {
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--secondary-font-color) !important;
-}
+
 .technologies-container .technology-card-container {
   display: flex;
   justify-content: center;

@@ -10,17 +10,15 @@ import SEO from "../components/seo"
 import Home from "../components/Home"
 import Projects from "../components/Projects"
 import Technology from "../components/Technology"
-import Footer from "../components/Footer"
 import Contact from "../components/Contact"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  <Layout>    
+    <SEO title="Fenil Kaneria" />
     <Home />
     <Projects />
     <Technology />
     <Contact />
-    <Footer />
   </Layout>
 )
 

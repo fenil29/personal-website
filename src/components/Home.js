@@ -2,54 +2,25 @@ import React, { useState } from "react";
 import "./Home.css";
 
 import Particles from "react-particles-js";
-
+let colorList=[
+  "--primary-color",
+"--primary-background-color",
+"--secondary-background-color",
+"--primary-font-color",
+"--secondary-font-color"
+]
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
   let handleDarkModeClick = () => {
-    setDarkMode(!darkMode);
-    if (darkMode) {
+    for (let i of colorList){
       document.documentElement.style.setProperty(
-        "--primary-color",
-        "var(--dark-mode-primary-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--primary-background-color",
-        "var(--dark-mode-primary-background-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--secondary-background-color",
-        "var(--dark-mode-secondary-background-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--primary-font-color",
-        "var(--dark-mode-primary-font-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--secondary-font-color",
-        "var(--dark-mode-secondary-font-color)"
-      );
-    } else {
-      document.documentElement.style.setProperty(
-        "--primary-color",
-        "var(--light-mode-primary-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--primary-background-color",
-        "var(--light-mode-primary-background-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--secondary-background-color",
-        "var(--light-mode-secondary-background-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--primary-font-color",
-        "var(--light-mode-primary-font-color)"
-      );
-      document.documentElement.style.setProperty(
-        "--secondary-font-color",
-        "var(--light-mode-secondary-font-color)"
+        i,
+        darkMode? `var(--dark-mode${i.slice(1,)})`: `var(--light-mode${i.slice(1,)})`
+       
       );
     }
+    setDarkMode(!darkMode);
+   
   };
   return (
     <div className="App-header">

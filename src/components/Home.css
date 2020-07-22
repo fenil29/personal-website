@@ -1,6 +1,6 @@
 
 .App-header {
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-background-color);
     height: 100vh;
     /* width: calc(100vw - (100vw - 100%)); */
     /* width: 100vw; */

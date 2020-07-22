@@ -1,13 +1,16 @@
 .project-card-container {
-  width: 290px;
+  width: 280px;
   overflow: hidden;
   background-color: var(--secondary-background-color);
   border-radius: 5px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  /* transition: transform 0.2s ease-in-out; */
 }
 .project-card-container img {
-  width: 300px;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
 }
 .project-card-container .content-container {
   padding: 20px;
@@ -20,9 +23,10 @@
 }
 .project-card-container p {
   text-align: left;
-  height: 150px;
+  height: 130px;
   overflow: auto;
 }
+
 .project-button button {
   background-color: var(--primary-color);
   color: white !important;
@@ -32,9 +36,8 @@
   padding-right: 20px;
   border-radius: 5px;
   text-align: center;
-
 }
-.project-button .icon svg path {
+.project-button .icon path {
   color: white !important;
 }
 .project-button .icon {
@@ -57,7 +60,7 @@
   background: #838383;
 }
 .project-details-modal {
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
   width: 90%;
   max-width: 1200px;
   margin: auto;
@@ -65,6 +68,8 @@
   /* overflow: auto; */
   margin-top: 10vh;
   margin-bottom: 10vh;
+  overflow: hidden;
+  /* border: 2px solid var(--secondary-background-color); */
 }
 .project-details-modal-overlay {
   position: fixed;
@@ -74,7 +79,7 @@
   right: 0;
   z-index: 199;
   /* background-color: rgba(var(--primary-font-color-value), 0.2); */
-  backdrop-filter: brightness(60%) blur(5px);
+  backdrop-filter: invert(10%) brightness(100%) blur(5px);
   overflow-y: scroll;
 }
 
@@ -93,9 +98,11 @@
   padding: 20px;
   position: relative;
   min-height: 530px;
+  /* background-color: red !important; */
+  /* padding-left: 30px; */
 }
 .project-details-modal-content .content-container button {
-  width: 130px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +110,7 @@
 }
 .project-details-modal-content .content-container .close-icon {
   position: absolute;
-  font-size: 20px;
+  font-size: 25px;
   right: 15px;
   top: 15px;
 }
@@ -140,6 +147,7 @@
   margin-right: -10px;
   /* height: 200px; */
   overflow: auto;
+  justify-content: center;
 }
 .project-details-modal-content .content-container .project-technology-card {
   margin: 10px;
@@ -147,9 +155,9 @@
   text-align: center;
   border-radius: 5px;
   /* background-color: #153057; */
-  background-color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
   /* border : 2px solid var(--primary-background-color); */
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px -15px
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px -15px;
 }
 .project-details-modal-content
   .content-container
@@ -190,7 +198,7 @@
 .ReactModal__Overlay {
   opacity: 0;
   /* transform: translateX(-100px); */
-  transition: all 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open {
