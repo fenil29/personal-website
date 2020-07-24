@@ -3,6 +3,7 @@ module.exports = {
     title: `Fenil Kaneria`,
     description: `personal website`,
     author: `fenil_kaneria`,
+    siteUrl: `https://fenilkaneria.tech`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,6 +34,14 @@ module.exports = {
         trackingId: "UA-142500829-2",
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://fenilkaneria.tech',
+        policy: [{ userAgent: '*', allow: '/' }],
+        sitemap: null,
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
