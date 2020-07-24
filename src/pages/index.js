@@ -9,6 +9,7 @@ import Home from "../components/Home"
 import Projects from "../components/Projects"
 import Technology from "../components/Technology"
 import Contact from "../components/Contact"
+import 'antd/dist/antd.css';
 
 const IndexPage = () => (
   <Layout>    
