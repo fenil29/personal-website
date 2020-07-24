@@ -59,7 +59,7 @@ function ProjectCard(props) {
                 <div>ExpressJs</div>
               </div> */}
             </div>
-            <div style={{ marginBottom: "70px" }}></div>
+            <div style={{ marginBottom: "50px" }}></div>
             <div className="project-details-button-container">
               {props.button.viewCodeUrl && (
                 <div className="project-button">
