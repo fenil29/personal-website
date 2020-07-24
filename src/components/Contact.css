@@ -38,12 +38,17 @@
   margin: 10px;
 }
 
-
-
-.toast-message .Toastify__toast--success{
-  background:#328d2b;
-
+.send-button span{
+  color: white !important;
 }
-.toast-message .Toastify__toast-body{
-  color:white !important;
+
+
+.ant-message-custom-content.ant-message-success path{
+  color: #52c41a !important;
+}
+.ant-message-custom-content.ant-message-error path{
+  color: #ff4d4f !important;
+}
+.ant-message-custom-content span{
+  color: black !important;
 }

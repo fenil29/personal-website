@@ -61,39 +61,14 @@ body {
   outline: none;
 }
 html {
-  font-family: sans-serif;
   line-height: 1.15;
 }
 body {
-  font-family: sans-serif;
   background-color: var(--primary-background-color) !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 14px;
-  line-height: 1.5715;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
-  font-weight: 500;
 }
 input::placeholder,
 textarea::placeholder {
   color: var(--primary-font-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-textarea {
-  font-family: inherit;
-  font-size: inherit;
 }
 
 a {
@@ -132,8 +107,6 @@ h1.title {
     border-radius: 10px;
     background: #c5c5c5;
   } */
-
-
 
 .main-container {
   width: 80%;
