@@ -37,3 +37,13 @@
   border-radius: 5px;
   margin: 10px;
 }
+
+
+
+.toast-message .Toastify__toast--success{
+  background:#328d2b;
+
+}
+.toast-message .Toastify__toast-body{
+  color:white !important;
+}
