@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Fenil Kaneria`,
-    description: `portfolio website`,
+    description: `personal website`,
     author: `fenil_kaneria`,
   },
   plugins: [
@@ -25,6 +25,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-142500829-2",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -11,13 +11,13 @@ import PropTypes from "prop-types"
 
 // import Header from "./header"
 import "./layout.css"
-import "./Footer.css";
-
+import "./Footer.css"
 
 import { AiOutlineLink } from "react-icons/ai"
 import { GrGatsbyjs } from "react-icons/gr"
 
-import { FaLinkedin,FaGithub,FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
+import gatsbySvg from "../asserts/gatsby.svg"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -39,7 +39,11 @@ const Layout = ({ children }) => {
         <div className="footer-container">
           <hr />
           <div className="icon-container">
-            <a href="https://github.com/fenil29" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/fenil29"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="icon" />
             </a>
             <a
@@ -49,7 +53,11 @@ const Layout = ({ children }) => {
             >
               <FaLinkedin className="icon" />
             </a>
-            <a href="https://twitter.com/FenilKaneria" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/FenilKaneria"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="icon" />
             </a>
           </div>
@@ -58,14 +66,15 @@ const Layout = ({ children }) => {
       </div> */}
         </div>
         <div className="footer-text">
-          <AiOutlineLink style={{ fontSize: "15px", marginRight: "3px" }} />{" "}
+          <AiOutlineLink style={{ fontSize: "17px", marginRight: "3px" }}    className="footer-icon"/>
           Designed & Developed by Fenil Kaneria © {new Date().getFullYear()},
           Built with
-          {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
-          <a href="https://www.gatsbyjs.org">
-            <GrGatsbyjs
-              className="gatsby-icon"
-              style={{ fontSize: "17px", marginLeft: "5px" }}
+          <a href="https://www.gatsbyjs.org" >
+            <img
+              className="footer-icon"
+              src={gatsbySvg}
+              style={{ height: "20px", marginLeft: "5px" }}
+              alt="gatsbySvg"
             />
           </a>
         </div>

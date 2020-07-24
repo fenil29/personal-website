@@ -11,7 +11,7 @@
 .contact-container .contact-form textarea {
   border: none;
   width: 100%;
-  margin: 7px;
+  margin-top: 15px;
   background-color: var(--secondary-background-color);
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px -15px;

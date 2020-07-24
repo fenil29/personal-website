@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import "./Home.css";
+import React, { useState } from "react"
+import "./Home.css"
 
-import Particles from "react-particles-js";
-let colorList=[
+import Particles from "react-particles-js"
+let colorList = [
   "--primary-color",
-"--primary-background-color",
-"--secondary-background-color",
-"--primary-font-color",
-"--secondary-font-color"
+  "--primary-background-color",
+  "--secondary-background-color",
+  "--primary-font-color",
+  "--secondary-font-color",
 ]
 function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false)
   let handleDarkModeClick = () => {
-    for (let i of colorList){
+    for (let i of colorList) {
       document.documentElement.style.setProperty(
         i,
-        darkMode? `var(--dark-mode${i.slice(1,)})`: `var(--light-mode${i.slice(1,)})`
-       
-      );
+        darkMode
+          ? `var(--dark-mode${i.slice(1)})`
+          : `var(--light-mode${i.slice(1)})`
+      )
     }
-    setDarkMode(!darkMode);
-   
-  };
+    setDarkMode(!darkMode)
+  }
   return (
     <div className="App-header">
       <Particles
@@ -71,13 +71,13 @@ function Home() {
       </div>
       <div className="particle-background-content">
         <div className="home-text-content">
-          <h1>FENIL KANERIA</h1>
-          <h2>UNDER CONSTRUCTION</h2>
-          <h3>WEBSITE IS COMING SOON</h3>
+          <h1>Hello, I'm Fenil Kaneria</h1>
+          {/* <h2>UNDER CONSTRUCTION</h2>
+          <h3>WEBSITE IS COMING SOON</h3> */}
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
