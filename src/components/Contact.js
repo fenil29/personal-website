@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import "./Contact.css"
 import Recaptcha from "react-google-recaptcha"
-import { Button, message } from "antd"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.min.css"
 
 function Contact() {
   const [captchaVisible, setCaptchaVisible] = useState(false)
-  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({})
 
   const encode = data => {
@@ -24,7 +24,6 @@ function Contact() {
   }
   let handleSubmit = e => {
     e.preventDefault()
-    setLoading(true)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -34,21 +33,30 @@ function Contact() {
       }),
     })
       .then(() => {
-        document.getElementById("contact-form").reset()
-        setLoading(false)
-        setCaptchaVisible(false)
-        message.success("Your submission has been received")
+        toast.success("Your submission has been received", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        })
       })
-      .catch(error => {
-        setLoading(false)
-        message.error("Sorry, something went wrong there. Try again.")
-      })
+      .catch(error =>
+        toast.error("Sorry, something went wrong there. Try again.", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        })
+      )
   }
   return (
     <div className="contact-container">
       <h1 className="title">Contact me</h1>
       <form
-        id="contact-form"
         name="contact"
         method="POST"
         className="contact-form"
@@ -105,17 +113,23 @@ function Contact() {
             onChange={handleRecaptcha}
           />
         )}
+
         <div className="form-element button">
-          <Button
-            htmlType="submit"
-            className="send-button"
-            size={"large"}
-            loading={loading}
-          >
-            Send
-          </Button>
+          <button type="submit">Send</button>
         </div>
       </form>
+      <ToastContainer
+        className="toast-message"
+        // position="bottom-right"
+        // autoClose={50000}
+        // hideProgressBar={false}
+        // newestOnTop={false}
+        // closeOnClick
+        // rtl={false}
+        // pauseOnFocusLoss
+        // draggable
+        // pauseOnHover
+      />
     </div>
   )
 }
