@@ -109,7 +109,6 @@ function Contact() {
           <Button
             htmlType="submit"
             className="send-button"
-            size={"large"}
             loading={loading}
           >
             Send

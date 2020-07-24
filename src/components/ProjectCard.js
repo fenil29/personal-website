@@ -1,7 +1,6 @@
 import React, { useState } from "react"
-
 import "./ProjectCard.css"
-
+import { Button } from "antd"
 // import { GithubOutlined, LinkOutlined, CloseOutlined } from "@ant-design/icons";
 import { AiOutlineLink } from "react-icons/ai"
 import { FaGithub } from "react-icons/fa"
@@ -33,7 +32,7 @@ function ProjectCard(props) {
           <div className="project-img">
             {/* <img src={appointMeetImg} alt="project" style={{ width: "100%" }} /> */}
             {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image" /> */}
-            <Image type={"details-image"} filename={props.imgName}/>
+            <Image type={"details-image"} filename={props.imgName} />
           </div>
           <div className="content-container">
             <MdClose className="close-icon" onClick={handleCancel} />
@@ -47,7 +46,7 @@ function ProjectCard(props) {
               <br />
               <div>Technology Used:</div>
               <div className="project-technology-container">
-                {props.technologyUsed.map((tech,index) => (
+                {props.technologyUsed.map((tech, index) => (
                   <div className="project-technology-card" key={index}>
                     <img className="img" src={tech.img} alt="react" />
                     <div>{tech.name}</div>
@@ -59,31 +58,44 @@ function ProjectCard(props) {
                 <div>ExpressJs</div>
               </div> */}
             </div>
-            <div style={{ marginBottom: "70px" }}></div>
+            <div style={{ marginBottom: "65px" }}></div>
             <div className="project-details-button-container">
               {props.button.viewCodeUrl && (
                 <div className="project-button">
-                  <a href={props.button.viewCodeUrl} target="_blank" rel="noopener noreferrer">
-                    <button>
-                      <FaGithub
-                        style={{ marginRight: "5px" }}
-                        className="icon"
-                      />
+                  <a
+                    href={props.button.viewCodeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      icon={
+                        <FaGithub
+                          style={{ marginRight: "5px" }}
+                          className="icon"
+                        />
+                      }
+                    >
                       View Code
-                    </button>
+                    </Button>
                   </a>
                 </div>
               )}
               {props.button.viewProjectUrl && (
                 <div className="project-button">
-                  <a href={props.button.viewProjectUrl} target="_blank" rel="noopener noreferrer">
-                    <button>
-                      <AiOutlineLink
-                        style={{ marginRight: "5px" }}
-                        className="icon"
-                      />
+                  <a
+                    href={props.button.viewProjectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                     icon={ <AiOutlineLink
+                      style={{ marginRight: "5px" }}
+                      className="icon"
+                    />}
+                    >
+                     
                       View Project
-                    </button>
+                    </Button>
                   </a>
                 </div>
               )}
@@ -96,14 +108,15 @@ function ProjectCard(props) {
           {/* <img src={appointMeetImg} alt="project" /> */}
           {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image"/> */}
           {/* <CardImgComponents /> */}
-          <Image type={"card-image"} filename={props.imgName}/>
-
+          <Image type={"card-image"} filename={props.imgName} />
 
           <div className="content-container">
             <h2>{props.title}</h2>
-            <div className="paragraph-container"><p>{props.descriptionShort}</p></div>            
+            <div className="paragraph-container">
+              <p>{props.descriptionShort}</p>
+            </div>
             <div className="project-button view-details-button">
-              <button onClick={onViewDetails}>View Details</button>
+              <Button onClick={onViewDetails}>View Details</Button>
             </div>
           </div>
         </div>

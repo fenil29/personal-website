@@ -1,6 +1,6 @@
 .footer-container {
   /* border-top: 1px solid  var(--primary-font-color); */
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .footer-container hr {
   border: none;
@@ -27,8 +27,15 @@
   width: 90%;
   margin: auto;
 }
-.footer-text svg path{
-  color: red;
+.footer-text a{
+  color: var(--primary-font-color) ;
+
+}
+.footer-text a:hover{
+  cursor: pointer;
+  opacity: 1;
+  color: var(--primary-font-color) ;
+
 }
 .footer-text .footer-icon{
   display: inline-block;

@@ -32,19 +32,9 @@
 }
 .project-card-container p {
   text-align: justify;
-  max-height: 130px;
+  max-height: 110px;
 }
 
-.project-button button {
-  background-color: var(--primary-color);
-  color: white !important;
-  border: 0px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
 .project-button .icon path {
   color: white !important;
 }
@@ -62,7 +52,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 18px;
+  bottom: 16px;
 }
 
 .project-details-modal {
@@ -230,7 +220,7 @@
   -webkit-border-radius: 10px;
   background: #838383;
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 950px) {
   .project-details-modal-content {
     flex-direction: column;
   }

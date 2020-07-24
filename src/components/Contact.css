@@ -28,14 +28,9 @@
   text-align: center;
 }
 .contact-container .contact-form button {
-  background-color: var(--primary-color);
-  color: white !important;
-  border: 0px;
-  padding: 8px;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 5px;
-  margin: 10px;
+  margin-top: 20px;
 }
 
 .send-button span{

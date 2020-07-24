@@ -70,6 +70,8 @@
     line-height: 1.2;
     margin-bottom: 40px;
     font-weight: 600;
+  color: var(--primary-font-color) ;
+
   }
   .particle-background-content h2 {
     line-height: 1rem;

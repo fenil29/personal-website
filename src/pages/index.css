@@ -54,7 +54,7 @@ body {
 }
 * {
   margin: 0;
-  color: var(--primary-font-color) !important;
+  color: var(--primary-font-color) ;
   transition: background-color 500ms linear;
 }
 *:focus {
@@ -79,9 +79,18 @@ h1.title {
   color: var(--secondary-font-color) !important;
   font-size: 30px;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
+button {
+  background-color: var(--primary-color) !important;
+  border-radius: 5px !important; 
+  border: 0px !important;
 
+}
+button span{
+  color: white !important;
+
+}
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
