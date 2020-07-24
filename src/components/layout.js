@@ -66,10 +66,15 @@ const Layout = ({ children }) => {
       </div> */}
         </div>
         <div className="footer-text">
-          <AiOutlineLink style={{ fontSize: "17px", marginRight: "3px" }}    className="footer-icon"/>
-          Designed & Developed by Fenil Kaneria © {new Date().getFullYear()},
-          Built with
-          <a href="https://www.gatsbyjs.org" >
+          <a href="https://github.com/fenil29/personal-website" target="_blank" rel="noopener noreferrer">
+            <AiOutlineLink
+              style={{ fontSize: "19px", marginRight: "3px" }}
+              className="footer-icon"
+            />
+            Designed & Developed by Fenil Kaneria © {new Date().getFullYear()}{" "}
+          </a>
+          , Built with
+          <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">
             <img
               className="footer-icon"
               src={gatsbySvg}
