@@ -101,6 +101,16 @@ h1.title {
   margin-bottom: 20px;
   margin-top: 40px;
 }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  background: #838383;
+}
 /* Scrollbar Styling
   ::-webkit-scrollbar {
     width: 12px;
@@ -117,22 +127,8 @@ h1.title {
     border-radius: 10px;
     background: #c5c5c5;
   } */
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 8px;
-}
 
-::-webkit-scrollbar-track {
-  /* background-color: #ebebeb; */
-  /* -webkit-border-radius: 10px; */
-  /* border-radius: 10px; */
-}
 
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  /* border-radius: 10px; */
-  background: #838383;
-}
 
 .main-container {
   width: 80%;

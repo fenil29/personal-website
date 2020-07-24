@@ -9,6 +9,7 @@ import { MdClose } from "react-icons/md"
 
 import Modal from "react-modal"
 import Image from "../components/image"
+
 function ProjectCard(props) {
   const [visible, setVisible] = useState(false)
   let onViewDetails = () => {
@@ -32,7 +33,7 @@ function ProjectCard(props) {
           <div className="project-img">
             {/* <img src={appointMeetImg} alt="project" style={{ width: "100%" }} /> */}
             {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image" /> */}
-            <Image type={"details-image"} filename={"appoint-meet.png"}/>
+            <Image type={"details-image"} filename={props.imgName}/>
           </div>
           <div className="content-container">
             <MdClose className="close-icon" onClick={handleCancel} />
@@ -46,8 +47,8 @@ function ProjectCard(props) {
               <br />
               <div>Technology Used:</div>
               <div className="project-technology-container">
-                {props.technologyUsed.map(tech => (
-                  <div className="project-technology-card">
+                {props.technologyUsed.map((tech,index) => (
+                  <div className="project-technology-card" key={index}>
                     <img className="img" src={tech.img} alt="react" />
                     <div>{tech.name}</div>
                   </div>
@@ -62,7 +63,7 @@ function ProjectCard(props) {
             <div className="project-details-button-container">
               {props.button.viewCodeUrl && (
                 <div className="project-button">
-                  <a href={props.button.viewCodeUrl} target="_blank">
+                  <a href={props.button.viewCodeUrl} target="_blank" rel="noopener noreferrer">
                     <button>
                       <FaGithub
                         style={{ marginRight: "5px" }}
@@ -75,7 +76,7 @@ function ProjectCard(props) {
               )}
               {props.button.viewProjectUrl && (
                 <div className="project-button">
-                  <a href={props.button.viewProjectUrl} target="_blank">
+                  <a href={props.button.viewProjectUrl} target="_blank" rel="noopener noreferrer">
                     <button>
                       <AiOutlineLink
                         style={{ marginRight: "5px" }}
@@ -95,12 +96,12 @@ function ProjectCard(props) {
           {/* <img src={appointMeetImg} alt="project" /> */}
           {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image"/> */}
           {/* <CardImgComponents /> */}
-          <Image type={"card-image"} filename={"appoint-meet.png"}/>
+          <Image type={"card-image"} filename={props.imgName}/>
 
 
           <div className="content-container">
             <h2>{props.title}</h2>
-            <p>{props.descriptionShort}</p>
+            <div className="paragraph-container"><p>{props.descriptionShort}</p></div>            
             <div className="project-button view-details-button">
               <button onClick={onViewDetails}>View Details</button>
             </div>

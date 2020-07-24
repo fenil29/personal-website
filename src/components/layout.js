@@ -7,9 +7,9 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+// import Header from "./header"
 import "./layout.css"
 import "./Footer.css";
 
@@ -20,15 +20,15 @@ import { GrGatsbyjs } from "react-icons/gr"
 import { FaLinkedin,FaGithub,FaTwitter } from "react-icons/fa";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
@@ -39,16 +39,17 @@ const Layout = ({ children }) => {
         <div className="footer-container">
           <hr />
           <div className="icon-container">
-            <a href="https://github.com/fenil29" target="_blank">
+            <a href="https://github.com/fenil29" target="_blank" rel="noopener noreferrer">
               <FaGithub className="icon" />
             </a>
             <a
               href="https://in.linkedin.com/in/fenil-kaneria-2a76bb153"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin className="icon" />
             </a>
-            <a href="https://twitter.com/FenilKaneria" target="_blank">
+            <a href="https://twitter.com/FenilKaneria" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="icon" />
             </a>
           </div>

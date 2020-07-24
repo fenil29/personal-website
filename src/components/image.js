@@ -59,7 +59,7 @@ const Image = props => {
       }
     }
   `)
-  console.log("props", props)
+  // console.log("props", props)
 
   // return <Img  fluid={data.placeholderImage.targetImg.fluid}  objectFit="cover" style={{width:"100%"}} alt="project-image"/>
   if (props.type === "details-image") {
@@ -87,7 +87,7 @@ const Image = props => {
       />
     )
   }
-  console.log(data.images)
+  // console.log(data.images)
 }
 
 

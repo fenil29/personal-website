@@ -10,6 +10,8 @@ import reactSvg from "../asserts/react.svg";
 import postgresqlSvg from "../asserts/postgresql.svg";
 import expressSvg from "../asserts/express.svg";
 import mongodbSvg from "../asserts/mongodb.svg";
+import gatsbySvg from "../asserts/gatsby.svg";
+import electronSvg from "../asserts/electron.svg";
 
 function Technology() {
   return (
@@ -35,6 +37,14 @@ function Technology() {
         <div className="technology-card">
           <img className="img" src={reactSvg} alt="reactSvg" />
           <div className="name">React</div>
+        </div>
+        <div className="technology-card">
+          <img className="img" src={gatsbySvg} alt="gatsbySvg" />
+          <div className="name">Gatsby</div>
+        </div>
+        <div className="technology-card">
+          <img className="img" src={electronSvg} alt="electronSvg" />
+          <div className="name">ElectronJs</div>
         </div>
         <div className="technology-card">
           <img className="img" src={reactSvg} alt="reactSvg" />
