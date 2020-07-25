@@ -125,6 +125,8 @@
 }
 .project-details-modal-content .content-container .project-type {
   /* color: rgba(var(--primary-font-color-value), 0.6) !important; */
+  color: var(--primary-font-color);
+
 }
 .project-details-modal-content .content-container hr {
   border: none;
@@ -135,6 +137,7 @@
 .project-details-modal-content .content-container .project-description {
   margin-top: 10px;
   text-align: justify;
+
 }
 .project-details-modal-content
   .content-container
