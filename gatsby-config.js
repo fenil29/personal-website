@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Fenil Kaneria`,
-    description: `personal website`,
-    author: `fenil_kaneria`,
-    siteUrl: `https://fenilkaneria.tech`
+    description: `Hello,I'm Fenil Kaneria`,
+    author: `Fenil Kaneria`,
+    siteUrl: `https://fenilkaneria.tech`,
+    keywords:"fenil kaneria,fenil,kaneria"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
