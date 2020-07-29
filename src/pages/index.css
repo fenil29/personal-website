@@ -54,7 +54,7 @@ body {
 }
 * {
   margin: 0;
-  color: var(--primary-font-color) ;
+  color: var(--primary-font-color);
   transition: background-color 500ms linear;
 }
 *:focus {
@@ -83,13 +83,11 @@ h1.title {
 }
 button {
   background-color: var(--primary-color) !important;
-  border-radius: 5px !important; 
+  border-radius: 5px !important;
   border: 0px !important;
-
 }
-button span{
+button span {
   color: white !important;
-
 }
 /* Scrollbar Styling */
 ::-webkit-scrollbar {

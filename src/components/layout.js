@@ -14,7 +14,6 @@ import "./layout.css"
 import "./Footer.css"
 
 import { AiOutlineLink } from "react-icons/ai"
-import { GrGatsbyjs } from "react-icons/gr"
 
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 import gatsbySvg from "../asserts/gatsby.svg"

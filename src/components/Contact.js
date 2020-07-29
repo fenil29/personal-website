@@ -1,12 +1,15 @@
 import React, { useState } from "react"
 import "./Contact.css"
-import Recaptcha from "react-google-recaptcha"
+import ReCAPTCHA from "react-google-recaptcha"
+
 import { Button, message } from "antd"
 
 function Contact() {
   const [captchaVisible, setCaptchaVisible] = useState(false)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({})
+  const [disableButton, setDisableButton] = useState(false)
+
 
   const encode = data => {
     return Object.keys(data)
@@ -16,15 +19,27 @@ function Contact() {
 
   let handleChange = e => {
     setCaptchaVisible(true)
+    if (formData["g-recaptcha-response"] === undefined) {
+      setDisableButton(true)
+    }
     setFormData({ ...formData, [e.target.name]: e.target.value })
+    console.log(formData, e.target.value)
   }
 
   let handleRecaptcha = value => {
+    setDisableButton(false)
+    console.log("onVerify", formData, value)
     setFormData({ ...formData, "g-recaptcha-response": value })
   }
   let handleSubmit = e => {
     e.preventDefault()
     setLoading(true)
+    console.log(formData)
+    if (formData["g-recaptcha-response"] === undefined) {
+      message.error("Please solve Captcha correctly!")
+      setLoading(false)
+      return
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -37,10 +52,13 @@ function Contact() {
         document.getElementById("contact-form").reset()
         setLoading(false)
         setCaptchaVisible(false)
+        setFormData({})
         message.success("Your submission has been received")
       })
       .catch(error => {
         setLoading(false)
+        setCaptchaVisible(false)
+        setFormData({})
         message.error("Sorry, something went wrong there. Try again.")
       })
   }
@@ -63,7 +81,7 @@ function Contact() {
             type="text"
             name="name"
             placeholder="Name"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           />
         </div>
@@ -72,7 +90,7 @@ function Contact() {
             type="email"
             name="email"
             placeholder="Email"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           />
         </div>
@@ -81,7 +99,7 @@ function Contact() {
             type="text"
             name="subject"
             placeholder="Subject"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           />
         </div>
@@ -89,17 +107,17 @@ function Contact() {
           <textarea
             name="message"
             placeholder="Your Message"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           ></textarea>
         </div>
         {/* <div data-netlify-recaptcha="true"></div> */}
         {captchaVisible && (
-          <Recaptcha
+          <ReCAPTCHA
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "5px",
+              marginTop: "10px",
             }}
             sitekey="6LeFjbUZAAAAAJEgzCJpUJN8_Fpmh3QFlqwCmgI0"
             onChange={handleRecaptcha}
@@ -110,6 +128,7 @@ function Contact() {
             htmlType="submit"
             className="send-button"
             loading={loading}
+            disabled={disableButton}
           >
             Send
           </Button>
