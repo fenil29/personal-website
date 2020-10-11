@@ -106,7 +106,7 @@ let projects = [
     ],
   },
   {
-    title: "Vehicle Speed Setection",
+    title: "Vehicle Speed Detection",
     type: "Python Script",
     imgName: "vehicle-speed-detection.png",
     // DetailsImage:AppointMeetDetailsImage,
