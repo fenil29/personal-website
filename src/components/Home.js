@@ -72,6 +72,7 @@ function Home() {
       <div className="particle-background-content">
         <div className="home-text-content">
           <h1>Hello, I'm Fenil Kaneria</h1>
+          <h2>Software Engineer</h2>
           {/* <h2>UNDER CONSTRUCTION</h2>
           <h3>WEBSITE IS COMING SOON</h3> */}
         </div>

@@ -19,7 +19,7 @@
 }
 .contact-container .contact-form input::placeholder,
 .contact-container .contact-form textarea::placeholder {
-  opacity: 0.4 ;
+  opacity: 0.4;
 }
 
 .contact-container .contact-form input {
@@ -37,27 +37,25 @@
   margin-top: 20px;
 }
 
-.send-button span{
+.send-button span {
   color: white !important;
 }
 
-.ant-message-custom-content.ant-message-success path{
+.ant-message-custom-content.ant-message-success path {
   color: #52c41a !important;
 }
-.ant-message-custom-content.ant-message-error path{
+.ant-message-custom-content.ant-message-error path {
   color: #ff4d4f !important;
 }
-.ant-message-custom-content span{
+.ant-message-custom-content span {
   color: black !important;
 }
-.ant-btn[disabled]{
-  background:#999999 !important
+.ant-btn[disabled] {
+  background: #999999 !important;
 }
 
-.email-container{
- background-color:var(--secondary-background-color);
- padding: 15px;
- border-radius: 5px;
-
-
+.email-container {
+  background-color: var(--secondary-background-color);
+  padding: 15px;
+  border-radius: 5px;
 }
