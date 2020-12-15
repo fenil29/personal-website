@@ -2,7 +2,13 @@ import React, { useState } from "react"
 import "./Contact.css"
 import ReCAPTCHA from "react-google-recaptcha"
 
-import { Button, message } from "antd"
+import { Button, message, Input } from "antd"
+
+
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { CopyOutlined } from "@ant-design/icons";
+
+const { Search } = Input;
 
 function Contact() {
   const [captchaVisible, setCaptchaVisible] = useState(false)
@@ -132,6 +138,33 @@ function Contact() {
           >
             Send
           </Button>
+        </div>
+        <div style={{textAlign:"center",margin:"15px"}}>
+
+          OR
+      </div>
+        <div className="">
+
+          <div className="email-container">
+            fenilkaneria@gmail.com
+
+      <CopyToClipboard
+              text="fenilkaneria@gmail.com"
+              onCopy={() => message.success("Copied")}
+            >
+              <CopyOutlined style={{ fontSize: "21px", float: "right" }} />
+            </CopyToClipboard>
+          </div>
+          <div className="form-element button">
+
+            <a href="mailto:fenilkaneria@gmail.com">
+              <Button
+              >Send Email
+          </Button>
+            </a>
+          </div>
+
+
         </div>
       </form>
     </div>

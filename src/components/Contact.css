@@ -17,6 +17,10 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px -15px;
   border-radius: 5px;
 }
+.contact-container .contact-form input::placeholder,
+.contact-container .contact-form textarea::placeholder {
+  opacity: 0.4 ;
+}
 
 .contact-container .contact-form input {
   /* height: 40px; */
@@ -50,3 +54,10 @@
   background:#999999 !important
 }
 
+.email-container{
+ background-color:var(--secondary-background-color);
+ padding: 15px;
+ border-radius: 5px;
+
+
+}
