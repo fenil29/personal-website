@@ -1,3 +1,6 @@
+footer{
+  padding-bottom: 25px;
+}
 .footer-container {
   /* border-top: 1px solid  var(--primary-font-color); */
   margin-top: 40px;
@@ -42,7 +45,7 @@
   vertical-align: text-top; 
 }
 .footer-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .footer-text:hover {
   cursor: pointer;
