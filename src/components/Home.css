@@ -43,7 +43,7 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index: 50;
+  /* z-index: 0; */
 }
 .particle-background-content {
   /* position: absolute; */
@@ -55,6 +55,8 @@
   /* align-items: center; */
   /* flex-direction: column; */
   /* z-index: 100; */
+  z-index: 100;
+
 }
 /* .home-text-content h1,
   .home-text-content h2,
@@ -91,6 +93,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.home-text-content a{
+/* margin-top: 10px; */
+/* font-size: 17px; */
+
+}
+.home-text-content button{
+margin-top: 18px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 @media only screen and (max-width: 850px) {
