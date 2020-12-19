@@ -3,7 +3,7 @@ module.exports = {
     title: `Fenil Kaneria`,
     description: `Hello,I'm Fenil Kaneria`,
     author: `Fenil Kaneria`,
-    siteUrl: `https://fenilkaneria.com`,
+    siteUrl: `https://fenilkaneria.tech`,
     keywords:"fenil kaneria,fenil,kaneria"
   },
   plugins: [
@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://fenilkaneria.com',
+        host: 'https://fenilkaneria.tech',
         policy: [{ userAgent: '*', allow: '/' }],
         sitemap: null,
       }

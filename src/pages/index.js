@@ -11,11 +11,11 @@ import Technology from "../components/Technology"
 import Contact from "../components/Contact"
 import 'antd/dist/antd.css';
 
-const IndexPage = (props) => (
+const IndexPage = () => (
   <Layout>    
     <SEO title="Fenil Kaneria" />
     <Home />
-    <Projects projectname={props.projectname}/>
+    <Projects />
     <Technology />
     <Contact />
   </Layout>

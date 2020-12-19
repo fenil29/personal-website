@@ -9,23 +9,14 @@ import { MdClose } from "react-icons/md"
 import Modal from "react-modal"
 import Image from "../components/image"
 
-import { navigate, Link } from "@reach/router"
-
 function ProjectCard(props) {
-  let projectNameInUrl = props.projectname
-    ? props.projectname.toLowerCase()
-    : ""
-  const [visible, setVisible] = useState(
-    projectNameInUrl === props.title.toLowerCase()
-  )
+  const [visible, setVisible] = useState(false)
   let onViewDetails = () => {
-    window.history.pushState("project", "project", "/project/" + props.title)
     setVisible(true)
     // document.getElementsByClassName("project-card-container").className = "project-card-container-details";
   }
   let handleCancel = e => {
     setVisible(false)
-    window.history.pushState("home", "home", "/")
   }
 
   return (
@@ -97,13 +88,12 @@ function ProjectCard(props) {
                     rel="noopener noreferrer"
                   >
                     <Button
-                      icon={
-                        <AiOutlineLink
-                          style={{ marginRight: "5px" }}
-                          className="icon"
-                        />
-                      }
+                     icon={ <AiOutlineLink
+                      style={{ marginRight: "5px" }}
+                      className="icon"
+                    />}
                     >
+                     
                       View Project
                     </Button>
                   </a>
