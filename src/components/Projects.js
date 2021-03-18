@@ -31,7 +31,7 @@ let projects = [
       "Appoint-Meet is an Online Booking System to manage all appointment scheduling process for businesses and individuals.",
     button: {
       viewCodeUrl: "",
-      viewProjectUrl: "https://appointmeet.netlify.app/",
+      viewProjectUrl: "https://appoint-meet.herokuapp.com/",
     },
     technologyUsed: [
       { name: "ReactJs", img: reactSvg },
@@ -106,7 +106,7 @@ let projects = [
     ],
   },
   {
-    title: "Vehicle Speed Setection",
+    title: "Vehicle Speed Detection",
     type: "Python Script",
     imgName: "vehicle-speed-detection.png",
     // DetailsImage:AppointMeetDetailsImage,

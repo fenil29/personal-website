@@ -1,12 +1,21 @@
 import React, { useState } from "react"
 import "./Contact.css"
-import Recaptcha from "react-google-recaptcha"
-import { ToastContainer, toast } from "react-toastify"
-import "react-toastify/dist/ReactToastify.min.css"
+import ReCAPTCHA from "react-google-recaptcha"
+
+import { Button, message, Input } from "antd"
+
+
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { CopyOutlined } from "@ant-design/icons";
+
+const { Search } = Input;
 
 function Contact() {
   const [captchaVisible, setCaptchaVisible] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({})
+  const [disableButton, setDisableButton] = useState(false)
+
 
   const encode = data => {
     return Object.keys(data)
@@ -16,14 +25,27 @@ function Contact() {
 
   let handleChange = e => {
     setCaptchaVisible(true)
+    if (formData["g-recaptcha-response"] === undefined) {
+      setDisableButton(true)
+    }
     setFormData({ ...formData, [e.target.name]: e.target.value })
+    console.log(formData, e.target.value)
   }
 
   let handleRecaptcha = value => {
+    setDisableButton(false)
+    console.log("onVerify", formData, value)
     setFormData({ ...formData, "g-recaptcha-response": value })
   }
   let handleSubmit = e => {
     e.preventDefault()
+    setLoading(true)
+    console.log(formData)
+    if (formData["g-recaptcha-response"] === undefined) {
+      message.error("Please solve Captcha correctly!")
+      setLoading(false)
+      return
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -33,30 +55,24 @@ function Contact() {
       }),
     })
       .then(() => {
-        toast.success("Your submission has been received", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-        })
+        document.getElementById("contact-form").reset()
+        setLoading(false)
+        setCaptchaVisible(false)
+        setFormData({})
+        message.success("Your submission has been received")
       })
-      .catch(error =>
-        toast.error("Sorry, something went wrong there. Try again.", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-        })
-      )
+      .catch(error => {
+        setLoading(false)
+        setCaptchaVisible(false)
+        setFormData({})
+        message.error("Sorry, something went wrong there. Try again.")
+      })
   }
   return (
     <div className="contact-container">
       <h1 className="title">Contact me</h1>
       <form
+        id="contact-form"
         name="contact"
         method="POST"
         className="contact-form"
@@ -71,7 +87,7 @@ function Contact() {
             type="text"
             name="name"
             placeholder="Name"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           />
         </div>
@@ -80,7 +96,7 @@ function Contact() {
             type="email"
             name="email"
             placeholder="Email"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           />
         </div>
@@ -89,7 +105,7 @@ function Contact() {
             type="text"
             name="subject"
             placeholder="Subject"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           />
         </div>
@@ -97,39 +113,60 @@ function Contact() {
           <textarea
             name="message"
             placeholder="Your Message"
-            onChange={handleChange}
+            onInput={handleChange}
             required
           ></textarea>
         </div>
         {/* <div data-netlify-recaptcha="true"></div> */}
         {captchaVisible && (
-          <Recaptcha
+          <ReCAPTCHA
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "5px",
+              marginTop: "10px",
             }}
             sitekey="6LeFjbUZAAAAAJEgzCJpUJN8_Fpmh3QFlqwCmgI0"
             onChange={handleRecaptcha}
           />
         )}
-
         <div className="form-element button">
-          <button type="submit">Send</button>
+          <Button
+            htmlType="submit"
+            className="send-button"
+            loading={loading}
+            disabled={disableButton}
+          >
+            Send
+          </Button>
+        </div>
+        <div style={{textAlign:"center",margin:"15px"}}>
+
+          OR
+      </div>
+        <div className="">
+
+          <div className="email-container">
+            fenilkaneria@gmail.com
+
+      <CopyToClipboard
+              text="fenilkaneria@gmail.com"
+              onCopy={() => message.success("Copied")}
+            >
+              <CopyOutlined style={{ fontSize: "21px", float: "right" }} />
+            </CopyToClipboard>
+          </div>
+          <div className="form-element button">
+
+            <a href="mailto:fenilkaneria@gmail.com">
+              <Button
+              >Send Email
+          </Button>
+            </a>
+          </div>
+
+
         </div>
       </form>
-      <ToastContainer
-        className="toast-message"
-        // position="bottom-right"
-        // autoClose={50000}
-        // hideProgressBar={false}
-        // newestOnTop={false}
-        // closeOnClick
-        // rtl={false}
-        // pauseOnFocusLoss
-        // draggable
-        // pauseOnHover
-      />
     </div>
   )
 }

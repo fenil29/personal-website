@@ -32,19 +32,9 @@
 }
 .project-card-container p {
   text-align: justify;
-  max-height: 130px;
+  max-height: 110px;
 }
 
-.project-button button {
-  background-color: var(--primary-color);
-  color: white !important;
-  border: 0px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
 .project-button .icon path {
   color: white !important;
 }
@@ -62,7 +52,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 18px;
+  bottom: 16px;
 }
 
 .project-details-modal {
@@ -114,7 +104,7 @@
   align-items: center;
   justify-content: center;
   line-height: 100%;
-  margin: 2px;
+  margin: 4px;
 }
 .project-details-modal-content .content-container .close-icon {
   position: absolute;
@@ -135,6 +125,8 @@
 }
 .project-details-modal-content .content-container .project-type {
   /* color: rgba(var(--primary-font-color-value), 0.6) !important; */
+  color: var(--primary-font-color);
+
 }
 .project-details-modal-content .content-container hr {
   border: none;
@@ -145,6 +137,7 @@
 .project-details-modal-content .content-container .project-description {
   margin-top: 10px;
   text-align: justify;
+
 }
 .project-details-modal-content
   .content-container
@@ -184,7 +177,7 @@
   display: flex;
   justify-content: space-around;
   position: absolute;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -230,7 +223,7 @@
   -webkit-border-radius: 10px;
   background: #838383;
 }
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 950px) {
   .project-details-modal-content {
     flex-direction: column;
   }

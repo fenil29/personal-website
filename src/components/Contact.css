@@ -17,6 +17,10 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px -15px;
   border-radius: 5px;
 }
+.contact-container .contact-form input::placeholder,
+.contact-container .contact-form textarea::placeholder {
+  opacity: 0.4;
+}
 
 .contact-container .contact-form input {
   /* height: 40px; */
@@ -28,22 +32,30 @@
   text-align: center;
 }
 .contact-container .contact-form button {
-  background-color: var(--primary-color);
-  color: white !important;
-  border: 0px;
-  padding: 8px;
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 20px;
+}
+
+.send-button span {
+  color: white !important;
+}
+
+.ant-message-custom-content.ant-message-success path {
+  color: #52c41a !important;
+}
+.ant-message-custom-content.ant-message-error path {
+  color: #ff4d4f !important;
+}
+.ant-message-custom-content span {
+  color: black !important;
+}
+.ant-btn[disabled] {
+  background: #999999 !important;
+}
+
+.email-container {
+  background-color: var(--secondary-background-color);
+  padding: 15px;
   border-radius: 5px;
-  margin: 10px;
-}
-
-
-
-.toast-message .Toastify__toast--success{
-  background:#328d2b;
-
-}
-.toast-message .Toastify__toast-body{
-  color:white !important;
 }

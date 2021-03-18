@@ -12,6 +12,8 @@ import expressSvg from "../asserts/express.svg";
 import mongodbSvg from "../asserts/mongodb.svg";
 import gatsbySvg from "../asserts/gatsby.svg";
 import electronSvg from "../asserts/electron.svg";
+import dockerSvg from "../asserts/docker.svg";
+import nginxSvg from "../asserts/nginx.svg";
 
 function Technology() {
   return (
@@ -65,6 +67,14 @@ function Technology() {
         <div className="technology-card">
           <img className="img" src={postgresqlSvg} alt="postgresqlSvg" />
           <div className="name">PostgreSql</div>
+        </div>        
+        <div className="technology-card">
+          <img className="img" src={dockerSvg} alt="postgresqlSvg" />
+          <div className="name">Docker</div>
+        </div>        
+        <div className="technology-card">
+          <img className="img" src={nginxSvg} alt="postgresqlSvg" />
+          <div className="name">NginX</div>
         </div>        
       </div>
     </div>

@@ -1,0 +1,19 @@
+.not-found h1 {
+  color: var(--primary-font-color);
+  text-align: center;
+  font-size: 130px;
+  margin-bottom: 10px;
+  padding-top: 15vh;
+}
+.not-found h2 {
+  color: var(--primary-font-color);
+  text-align: center;
+  font-size: 30px;
+}
+.not-found  .text {
+  color: var(--primary-font-color);
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20vh;
+
+}

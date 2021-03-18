@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 import Home from "../components/Home"
 import Projects from "../components/Projects"
 import Technology from "../components/Technology"
-import WorkExperience from "../components/WorkExperience"
 import Contact from "../components/Contact"
+import 'antd/dist/antd.css';
 
 const IndexPage = () => (
   <Layout>    
@@ -17,7 +17,6 @@ const IndexPage = () => (
     <Home />
     <Projects />
     <Technology />
-    <WorkExperience />
     <Contact />
   </Layout>
 )
