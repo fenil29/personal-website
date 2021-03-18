@@ -1,0 +1,17 @@
+.ant-timeline-item-tail{
+  border-color: var(--primary-color) !important;
+}
+.ant-timeline-item-head{
+  background-color: transparent !important;
+
+}
+.timeline-dot{
+  background-color: var(--primary-background-color);
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border:2px solid var(--primary-color);
+}
+.timeline-container{
+
+}

@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Home from "../components/Home"
 import Projects from "../components/Projects"
 import Technology from "../components/Technology"
+import WorkExperience from "../components/WorkExperience"
 import Contact from "../components/Contact"
 
 const IndexPage = () => (
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Home />
     <Projects />
     <Technology />
+    <WorkExperience />
     <Contact />
   </Layout>
 )
