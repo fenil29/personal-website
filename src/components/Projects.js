@@ -4,11 +4,11 @@ import "./Projects.css"
 
 import ProjectCard from "./ProjectCard"
 
-import javaScriptSvg from "../asserts/javascript.svg";
-import pythonSvg from "../asserts/python.svg";
-import opencvSvg from "../asserts/opencv.svg";
-import arduinoSvg from "../asserts/arduino.svg";
-import androidSvg from "../asserts/android.svg";
+import javaScriptSvg from "../asserts/javascript.svg"
+import pythonSvg from "../asserts/python.svg"
+import opencvSvg from "../asserts/opencv.svg"
+import arduinoSvg from "../asserts/arduino.svg"
+import androidSvg from "../asserts/android.svg"
 import nodejsSvg from "../asserts/nodejs.svg"
 import reactSvg from "../asserts/react.svg"
 import EjsSvg from "../asserts/ejs.svg"
@@ -16,10 +16,35 @@ import postgresqlSvg from "../asserts/postgresql.svg"
 import expressSvg from "../asserts/express.svg"
 import jwtSvg from "../asserts/jwt.svg"
 import mongodbSvg from "../asserts/mongodb.svg"
-import electronSvg from "../asserts/electron.svg";
-
+import electronSvg from "../asserts/electron.svg"
+import redisSvg from "../asserts/redis.svg"
+import azureSvg from "../asserts/azure.svg"
+import dockerSvg from "../asserts/docker.svg"
 
 let projects = [
+  {
+    title: "Habbit Space",
+    type: "Web Application",
+    imgName: "habbit-space.png",
+    // DetailsImage:AppointMeetDetailsImage,
+    descriptionShort:
+      "A Minimal Habit Tracker- Completely Free and Open Source tracker to track your habit easily",
+    descriptionLong:
+      "A Minimal Habit Tracker- Completely Free and Open Source tracker to track your habit easily",
+    button: {
+      viewCodeUrl: "",
+      viewProjectUrl: "https://habbit.space/",
+    },
+    technologyUsed: [
+      { name: "ReactJs", img: reactSvg },
+      { name: "NodeJs", img: nodejsSvg },
+      { name: "ExpressJs", img: expressSvg },
+      { name: "PostgreSQL", img: postgresqlSvg },
+      { name: "Redis", img: redisSvg },
+      { name: "Docker", img: dockerSvg },
+      { name: "Azure", img: azureSvg },
+    ],
+  },
   {
     title: "Appoint Meet",
     type: "Web Application",
