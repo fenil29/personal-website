@@ -14,6 +14,8 @@ import gatsbySvg from "../asserts/gatsby.svg";
 import electronSvg from "../asserts/electron.svg";
 import dockerSvg from "../asserts/docker.svg";
 import nginxSvg from "../asserts/nginx.svg";
+import digitalOceanSvg from "../asserts/digital-ocean.svg";
+import azureSvg from "../asserts/azure.svg";
 
 function Technology() {
   return (
@@ -75,6 +77,14 @@ function Technology() {
         <div className="technology-card">
           <img className="img" src={nginxSvg} alt="postgresqlSvg" />
           <div className="name">NginX</div>
+        </div>        
+        <div className="technology-card">
+          <img className="img" src={digitalOceanSvg} alt="postgresqlSvg" />
+          <div className="name">Digital Ocean</div>
+        </div>        
+        <div className="technology-card">
+          <img className="img" src={azureSvg} alt="postgresqlSvg" />
+          <div className="name">Azure</div>
         </div>        
       </div>
     </div>
