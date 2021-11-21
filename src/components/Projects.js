@@ -20,6 +20,8 @@ import electronSvg from "../asserts/electron.svg"
 import redisSvg from "../asserts/redis.svg"
 import azureSvg from "../asserts/azure.svg"
 import dockerSvg from "../asserts/docker.svg"
+import githubActionsSvg from "../asserts/github-actions.svg";
+
 
 let projects = [
   {
@@ -41,6 +43,7 @@ let projects = [
       { name: "ExpressJs", img: expressSvg },
       { name: "PostgreSQL", img: postgresqlSvg },
       { name: "Redis", img: redisSvg },
+      { name: "Github Actions", img: githubActionsSvg },
       { name: "Docker", img: dockerSvg },
       { name: "Azure", img: azureSvg },
     ],
