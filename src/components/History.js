@@ -9,9 +9,7 @@ import "react-vertical-timeline-component/style.min.css"
 
 import Image from "../components/image"
 
-import SchoolIcon from "@material-ui/icons/School"
-import WorkIcon from "@material-ui/icons/Work"
-import StarIcon from "@material-ui/icons/Star"
+import { MdWork,MdSchool } from 'react-icons/md';
 
 function History() {
   return (
@@ -22,7 +20,7 @@ function History() {
           className="vertical-timeline-element--education"
           date="Sep 2021 - Present"
           // iconStyle={{ background: "var(--secondary-background-color)", color:  "var(--secondary-background-color)" }}
-          icon={<SchoolIcon />}
+          icon={<MdSchool />}
         >
           <div className="history-image">
             <Image type={"details-image"} filename={"uwin-logo.jpg"} />
@@ -42,7 +40,7 @@ function History() {
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="Jan 2021 – June 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<WorkIcon />}
+          icon={<MdWork />}
         >
           <div className="history-image">
             <Image type={"details-image"} filename={"tr-logo.jpg"} />
@@ -62,7 +60,7 @@ function History() {
           className="vertical-timeline-element--education"
           date="June 2017 – June 2021"
           // iconStyle={{ background: "var(--secondary-background-color)", color:  "var(--secondary-background-color)" }}
-          icon={<SchoolIcon />}
+          icon={<MdSchool />}
         >
           <div className="history-image">
             <Image type={"details-image"} filename={"charusat-logo.png"} />
