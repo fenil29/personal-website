@@ -1,0 +1,30 @@
+.vertical-timeline-element-title {
+  color: var(--primary-font-color) !important;
+}
+.vertical-timeline-element--work span.bounce-in {
+  background-color: var(--secondary-background-color) !important;
+}
+.vertical-timeline-element--education span.bounce-in {
+  background-color: var(--secondary-background-color) !important;
+}
+.vertical-timeline-element--work div.bounce-in {
+  background-color: var(--secondary-background-color) !important;
+}
+.vertical-timeline-element--education div.bounce-in {
+  background-color: var(--secondary-background-color) !important;
+}
+.vertical-timeline-element--work h4 ,.vertical-timeline-element--education h4 {
+  color: var(--primary-font-color) !important;
+  font-size: 15px;
+  font-weight: 700;
+}
+.vertical-timeline-element--work h3 ,.vertical-timeline-element--education h3 {
+  margin-top: 10px;
+}
+.vertical-timeline-element--education h4 {
+  color: var(--primary-font-color) !important;
+}
+.history-image{
+    width: 100%;
+    /* max-height: 100px; */
+}
