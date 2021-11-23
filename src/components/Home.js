@@ -111,7 +111,7 @@ function Home() {
                 <MdEmail className="icon" style={{ fontSize: "38px" }} />
               </a>
             </div>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+            <a href="/Fenil_Kaneria_Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
             {/* <Button>My Resume</Button> */}
             Resume
           </a>
