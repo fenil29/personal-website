@@ -104,7 +104,29 @@ margin-top: 18px;
 padding-left: 20px;
 padding-right: 20px;
 }
-
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;  
+}
+.icon-container .icon{
+  font-size: 35px;
+  margin: 10px;
+  opacity: 0.8;
+}
+.icon-container .icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.resume-button{
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: 1px solid;
+  padding: 2px 9px 2px 11px;
+  border-radius: 3px;
+}
 @media only screen and (max-width: 850px) {
   .particle-background-content h1 {
     /* font-size: 3.5em; */

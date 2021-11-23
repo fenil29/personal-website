@@ -4,6 +4,8 @@ import "./Home.css"
 import { Button } from "antd"
 
 import Particles from "react-particles-js"
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
 let colorList = [
   "--primary-color",
   "--primary-background-color",
@@ -11,6 +13,7 @@ let colorList = [
   "--primary-font-color",
   "--secondary-font-color",
 ]
+
 function Home() {
   const [darkMode, setDarkMode] = useState(false)
   let handleDarkModeClick = () => {
@@ -77,11 +80,41 @@ function Home() {
           <h2>Software Engineer</h2>
           {/* <h2>UNDER CONSTRUCTION</h2>
           <h3>WEBSITE IS COMING SOON</h3> */}
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-          <Button>
-              My Resume
-          </Button>
-            </a>
+       
+            <div className="icon-container">
+              <a
+                href="https://github.com/fenil29"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="icon" />
+              </a>
+              <a
+                href="https://in.linkedin.com/in/fenil-kaneria-2a76bb153"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="icon" />
+              </a>
+              <a
+                href="https://twitter.com/FenilKaneria"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="icon" />
+              </a>
+              <a
+                href="mailto:fenilkaneria@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MdEmail className="icon" style={{ fontSize: "38px" }} />
+              </a>
+            </div>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+            {/* <Button>My Resume</Button> */}
+            Resume
+          </a>
         </div>
       </div>
     </div>

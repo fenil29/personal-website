@@ -29,6 +29,7 @@ footer{
   text-align: center;
   width: 90%;
   margin: auto;
+  margin-top: 20px;
 }
 .footer-text a{
   color: var(--primary-font-color) ;

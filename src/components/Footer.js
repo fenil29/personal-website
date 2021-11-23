@@ -12,7 +12,7 @@ function Footer() {
     <footer>
     <div className="footer-container">
       <hr />
-      <div className="icon-container">
+      {/* <div className="icon-container">
         <a
           href="https://github.com/fenil29"
           target="_blank"
@@ -34,7 +34,7 @@ function Footer() {
         >
           <FaTwitter className="icon" />
         </a>
-      </div>
+      </div> */}
       {/* <div className="footer-text">
     <AiOutlineLink style={{fontSize:"15px",marginRight:"3px"}}/> Designed & Developed by Fenil Kaneria
   </div> */}
