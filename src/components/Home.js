@@ -58,7 +58,7 @@ function Home() {
             fpsLimit: 60,
 
             fullScreen: {
-              enable: true,
+              enable: false,
               zIndex: -10,
             },
             detectRetina: true,
@@ -67,72 +67,7 @@ function Home() {
 
             particles: {
               color: darkMode ? "#15202b" : "#ffffff",
-              bounce: {
-                horizontal: {
-                  random: {
-                    enable: false,
-                    minimumValue: 0.1,
-                  },
-                  value: 1,
-                },
-                vertical: {
-                  random: {
-                    enable: false,
-                    minimumValue: 0.1,
-                  },
-                  value: 1,
-                },
-              },
-              collisions: {
-                bounce: {
-                  horizontal: {
-                    random: {
-                      enable: false,
-                      minimumValue: 0.1,
-                    },
-                    value: 1,
-                  },
-                  vertical: {
-                    random: {
-                      enable: false,
-                      minimumValue: 0.1,
-                    },
-                    value: 1,
-                  },
-                },
-                enable: false,
-                mode: "bounce",
-                overlap: {
-                  enable: true,
-                  retries: 0,
-                },
-              },
 
-              destroy: {
-                mode: "none",
-                split: {
-                  count: 1,
-                  factor: {
-                    random: {
-                      enable: false,
-                      minimumValue: 0,
-                    },
-                    value: 3,
-                  },
-                  rate: {
-                    random: {
-                      enable: false,
-                      minimumValue: 0,
-                    },
-                    value: {
-                      min: 4,
-                      max: 9,
-                    },
-                  },
-                  sizeOffset: true,
-                },
-              },
-              gradient: [],
               groups: {
                 z5000: {
                   number: {
@@ -167,49 +102,8 @@ function Home() {
                   },
                 },
               },
-              life: {
-                count: 0,
-                delay: {
-                  random: {
-                    enable: false,
-                    minimumValue: 0,
-                  },
-                  value: 0,
-                  sync: false,
-                },
-                duration: {
-                  random: {
-                    enable: false,
-                    minimumValue: 0.0001,
-                  },
-                  value: 0,
-                  sync: false,
-                },
-              },
-              links: {
-                blink: false,
-                color: {
-                  value: "#ffffff",
-                },
-                consent: false,
-                distance: 100,
-                enable: false,
-                frequency: 1,
-                opacity: 0.4,
-                shadow: {
-                  blur: 5,
-                  color: {
-                    value: "#00ff00",
-                  },
-                  enable: false,
-                },
-                triangles: {
-                  enable: false,
-                  frequency: 1,
-                },
-                width: 1,
-                warp: false,
-              },
+
+      
               move: {
                 angle: {
                   offset: 0,
@@ -273,8 +167,8 @@ function Home() {
               },
               number: {
                 density: {
-                  enable: false,
-                  area: 800,
+                  enable: true,
+                  area: 10000,
                   factor: 1000,
                 },
                 limit: 0,
