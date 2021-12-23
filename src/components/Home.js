@@ -4,6 +4,9 @@ import "./Home.css"
 import { Button } from "antd"
 
 import Particles from "react-tsparticles"
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+
 let colorList = [
   "--primary-color",
   "--primary-background-color",
@@ -449,10 +452,6 @@ function Home() {
           <h2>Software Engineer</h2>
           {/* <h2>UNDER CONSTRUCTION</h2>
           <h3>WEBSITE IS COMING SOON</h3> */}
-<<<<<<< HEAD
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-            <Button>My Resume</Button>
-=======
        
             <div className="icon-container">
               <a
@@ -487,7 +486,6 @@ function Home() {
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
             {/* <Button>My Resume</Button> */}
             Resume
->>>>>>> parent of 2b2cdea (change resume name)
           </a>
         </div>
       </div>
