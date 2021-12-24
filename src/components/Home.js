@@ -59,7 +59,7 @@ function Home() {
 
             fullScreen: {
               enable: false,
-              zIndex: -10,
+              zIndex: -20,
             },
             detectRetina: true,
             duration: 0,
