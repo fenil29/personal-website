@@ -168,8 +168,8 @@ function Home() {
               number: {
                 density: {
                   enable: true,
-                  area: 10000,
-                  factor: 1000,
+                  area: 100000,
+                  factor: 10000,
                 },
                 limit: 0,
                 value: 200,
@@ -268,7 +268,7 @@ function Home() {
                   enable: false,
                   minimumValue: 1,
                 },
-                value: 3,
+                value: 1.5,
                 animation: {
                   count: 0,
                   enable: false,
