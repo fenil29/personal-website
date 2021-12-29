@@ -13,6 +13,7 @@ import mongodbSvg from "../asserts/mongodb.svg";
 import gatsbySvg from "../asserts/gatsby.svg";
 import electronSvg from "../asserts/electron.svg";
 import dockerSvg from "../asserts/docker.svg";
+import githubActionsSvg from "../asserts/github-actions.svg";
 import nginxSvg from "../asserts/nginx.svg";
 import digitalOceanSvg from "../asserts/digital-ocean.svg";
 import azureSvg from "../asserts/azure.svg";
@@ -73,6 +74,10 @@ function Technology() {
         <div className="technology-card">
           <img className="img" src={dockerSvg} alt="postgresqlSvg" />
           <div className="name">Docker</div>
+        </div>        
+        <div className="technology-card">
+          <img className="img" src={githubActionsSvg} alt="GithubActions" />
+          <div className="name">Github Actions</div>
         </div>        
         <div className="technology-card">
           <img className="img" src={nginxSvg} alt="postgresqlSvg" />
