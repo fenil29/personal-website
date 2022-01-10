@@ -120,12 +120,18 @@ padding-right: 20px;
   opacity: 1;
 }
 .resume-button{
+  color: var(--primary-color);
   font-size: 19px;
   text-transform: uppercase;
   letter-spacing: 4px;
   border: 1px solid;
   padding: 2px 9px 2px 11px;
   border-radius: 3px;
+}
+.resume-button:hover{
+  border-color:  var(--primary-color) ;
+  color: var(--primary-font-color);
+  background-color: var(--primary-color);
 }
 @media only screen and (max-width: 850px) {
   .particle-background-content h1 {
