@@ -16,7 +16,7 @@ import 'antd/dist/antd.css';
 const IndexPage = () => (
   <Layout>    
     <SEO title="Fenil Kaneria" />
-    {/* <NavBar /> */}
+    <NavBar />
     <Home />
     <Projects />
     <Technology />

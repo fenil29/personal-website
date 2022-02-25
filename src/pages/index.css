@@ -66,6 +66,7 @@ html {
 body {
   background-color: var(--primary-background-color) !important;
 }
+
 input::placeholder,
 textarea::placeholder {
   color: var(--primary-font-color);
@@ -119,7 +120,6 @@ button span {
   width: 80%;
   margin: auto;
 }
-
 
 @media only screen and (max-width: 950px) {
   .main-container {

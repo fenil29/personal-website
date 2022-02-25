@@ -211,9 +211,9 @@ let projects = [
 
 function Projects() {
   return (
-    <div className="projects main-container">
+    <div className="projects main-container" >
       {/* <h1 className="title">Projects I've Built</h1> */}
-      <h1 className="title">Projects</h1>
+      <h1 className="title" id="projects">Projects</h1>
       <div className="projects-container">
         {projects.map((item, index) => (
           <ProjectCard {...item} key={index} />

@@ -21,7 +21,7 @@ import azureSvg from "../asserts/azure.svg";
 function Technology() {
   return (
     <div className="technologies-container main-container">
-      <h1 className="title">Technologies I've Worked With</h1>
+      <h1 className="title" id="technologies" >Technologies I've Worked With</h1>
       <div className="technology-card-container">
         <div className="technology-card">
           <img className="img" src={htmlSvg} alt="htmlSvg" />

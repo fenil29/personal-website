@@ -14,8 +14,8 @@
 .dark-mode-icon {
   position: fixed;
   right: 0;
-  top: 0;
-  margin: 20px;
+  top: 0px;
+  margin: 15px;
   border: 1px solid var(--primary-font-color);
   padding: 7px;
   padding-bottom: 3px;

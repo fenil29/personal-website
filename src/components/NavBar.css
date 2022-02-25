@@ -1,12 +1,54 @@
 .nav-bar{
-    background-color: black;
+    /* background-color: black; */
     /* opacity: 0.5; */
     position: fixed;
     z-index: 10;
     width: 100%;
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter:  opacity(0.5) blur(10px);
+    /* backdrop-filter:  opacity(0.5) blur(10px); */
+    backdrop-filter: blur(20px)   ;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* background-color:rgba(255, 255, 255, 0.192); */
+    /* background-color:red; */
+
+    /* background-color: var(--secondary-background-color); */
+    /* opacity: 0.5; */
+    /* border-bottom: 1px solid var(--secondary-background-color); */
+/* border-bottom: 1px solid  var(--primary-font-color); */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 90px;
+
 }
+.nav-bar .left{
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav-bar .right{
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+}
+.nav-bar .link:hover{
+   cursor: pointer;
+}
+.nav-bar .right div{
+   padding-left: 20px;
+}
+
+@media only screen and (max-width: 940px) {
+    .nav-bar{
+        padding-left: 50px;
+        padding-right: 80px;
+    
+    }
+  }
+@media only screen and (max-width: 780px) {
+    .nav-bar{
+     display: none;
+    }
+  }

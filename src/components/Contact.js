@@ -70,7 +70,7 @@ function Contact() {
   }
   return (
     <div className="contact-container">
-      <h1 className="title">Contact me</h1>
+      <h1 className="title" id="contact-me">Contact me</h1>
       <form
         id="contact-form"
         name="contact"

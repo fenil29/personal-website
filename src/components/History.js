@@ -14,7 +14,7 @@ import { MdWork,MdSchool } from 'react-icons/md';
 function History() {
   return (
     <div className="technologies-container main-container">
-      <h1 className="title">Experience and Education</h1>
+      <h1 className="title" id="experience-and-education">Experience and Education</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
