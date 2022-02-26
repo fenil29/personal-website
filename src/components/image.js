@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -14,51 +15,38 @@ import Img from "gatsby-image"
  */
 
 const Image = props => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "appoint-meet.png" }) {
+  const data = useStaticQuery(graphql`{
+  file(relativePath: {eq: "images/example.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FIXED)
+    }
+  }
+  cardImages: allFile(
+    filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "project-img"}}
+  ) {
+    edges {
+      node {
+        base
         childImageSharp {
-          fluid(maxWidth: 700) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      cardImages: allFile(
-        filter: {
-          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          relativeDirectory: { eq: "project-img" }
-        }
-      ) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid (maxHeight: 180){
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-      detailsImages: allFile(
-        filter: {
-          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          relativeDirectory: { eq: "project-img" }
-        }
-      ) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          gatsbyImageData(height: 180, layout: FULL_WIDTH)
         }
       }
     }
-  `)
+  }
+  detailsImages: allFile(
+    filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, relativeDirectory: {eq: "project-img"}}
+  ) {
+    edges {
+      node {
+        base
+        childImageSharp {
+          gatsbyImageData(width: 800, layout: CONSTRAINED)
+        }
+      }
+    }
+  }
+}
+`)
   // console.log("props", props)
 
   // return <Img  fluid={data.placeholderImage.targetImg.fluid}  objectFit="cover" style={{width:"100%"}} alt="project-image"/>
@@ -67,8 +55,8 @@ const Image = props => {
       i => i.node.base === props.filename
     )[0]
     return (
-      <Img
-        fluid={targetImg.node.childImageSharp.fluid}
+      <GatsbyImage
+        image={targetImg.node.childImageSharp.gatsbyImageData}
         objectFit="cover"
         style={{ width: "100%" }}
         alt="project-image"
@@ -79,8 +67,8 @@ const Image = props => {
       i => i.node.base === props.filename
     )[0]
     return (
-      <Img
-        fluid={targetImg.node.childImageSharp.fluid}
+      <GatsbyImage
+      image={targetImg.node.childImageSharp.gatsbyImageData}
         objectFit="cover"
         style={{ height: "180px" }}
         alt="project-image"
@@ -89,6 +77,5 @@ const Image = props => {
   }
   // console.log(data.images)
 }
-
 
 export default Image

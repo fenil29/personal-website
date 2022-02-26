@@ -7,6 +7,7 @@ module.exports = {
     keywords:"fenil kaneria,fenil,kaneria"
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
