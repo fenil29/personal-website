@@ -4,18 +4,16 @@ import ReCAPTCHA from "react-google-recaptcha"
 
 import { Button, message, Input } from "antd"
 
+import { CopyToClipboard } from "react-copy-to-clipboard"
+import { CopyOutlined } from "@ant-design/icons"
 
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { CopyOutlined } from "@ant-design/icons";
-
-const { Search } = Input;
+const { Search } = Input
 
 function Contact() {
   const [captchaVisible, setCaptchaVisible] = useState(false)
   const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({})
   const [disableButton, setDisableButton] = useState(false)
-
 
   const encode = data => {
     return Object.keys(data)
@@ -70,7 +68,9 @@ function Contact() {
   }
   return (
     <div className="contact-container">
-      <h1 className="title" id="contact-me">Contact me</h1>
+      <h1 className="title" id="contact-me">
+        Contact me
+      </h1>
       <form
         id="contact-form"
         name="contact"
@@ -139,33 +139,23 @@ function Contact() {
             Send
           </Button>
         </div>
-        <div style={{textAlign:"center",margin:"15px"}}>
-
-          OR
-      </div>
+        {/* <div style={{ textAlign: "center", margin: "15px" }}>OR</div>
         <div className="">
-
           <div className="email-container">
-            fenilkaneria@gmail.com
-
-      <CopyToClipboard
-              text="fenilkaneria@gmail.com"
+            myemail@gmail.com
+            <CopyToClipboard
+              text="myemail@gmail.com"
               onCopy={() => message.success("Copied")}
             >
               <CopyOutlined style={{ fontSize: "21px", float: "right" }} />
             </CopyToClipboard>
           </div>
           <div className="form-element button">
-
-            <a href="mailto:fenilkaneria@gmail.com">
-              <Button
-              >Send Email
-          </Button>
+            <a href="mailto:myemail@gmail.com">
+              <Button>Send Email</Button>
             </a>
           </div>
-
-
-        </div>
+        </div> */}
       </form>
     </div>
   )

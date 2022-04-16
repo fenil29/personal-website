@@ -369,13 +369,13 @@ function Home() {
               >
                 <FaTwitter className="icon" />
               </a>
-              <a
-                href="mailto:fenilkaneria@gmail.com"
+              {/* <a
+                href="mailto:myemail@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <MdEmail className="icon" style={{ fontSize: "38px" }} />
-              </a>
+              </a> */}
             </div>
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
             {/* <Button>My Resume</Button> */}
