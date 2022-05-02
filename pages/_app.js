@@ -1,7 +1,8 @@
-import "../styles/globals.css";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
+
+import "../styles/globals.scss";
 
 export default function App(props) {
   const { Component, pageProps } = props;
@@ -17,11 +18,15 @@ export default function App(props) {
       </Head>
 
       <MantineProvider
+        withCSSVariables
         withGlobalStyles
         withNormalizeCSS
         theme={{
           /** Put your mantine theme override here */
           colorScheme: "light",
+          colors: {
+            "custom-background": ["#f8f9fa"],
+          },
         }}
       >
         <Component {...pageProps} />
