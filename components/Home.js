@@ -25,9 +25,12 @@ function Home() {
           <Image
             className="profile-picture"
             src={profilePic}
+            objectFit="contain"
             alt="Picture of the author"
             // width={500} automatically provided
-            // height={500} automatically provided
+            // height={"100%"}
+            automatically
+            provided
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
             priority
