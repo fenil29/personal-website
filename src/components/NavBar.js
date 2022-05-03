@@ -15,12 +15,21 @@ function NavBar() {
         Fenil Kaneria
       </div>
       <div className="right">
-        <div className="link" onClick={() => scrollToSection("projects")}>Projects</div>
-        <div className="link" onClick={() => scrollToSection("technologies")}>Technologies</div>
-        <div className="link" onClick={() => scrollToSection("experience-and-education")}>
+        <div className="link" onClick={() => scrollToSection("projects")}>
+          Projects
+        </div>
+        <div className="link" onClick={() => scrollToSection("technologies")}>
+          Technologies
+        </div>
+        <div
+          className="link"
+          onClick={() => scrollToSection("experience-and-education")}
+        >
           Experience and Education
         </div>
-        <div className="link" onClick={() => scrollToSection("contact-me")}>Contact me</div>
+        <div className="link" onClick={() => scrollToSection("contact-me")}>
+          Contact me
+        </div>
       </div>
     </div>
   )

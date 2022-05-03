@@ -4,7 +4,7 @@ module.exports = {
     description: `Hello,I'm Fenil Kaneria`,
     author: `Fenil Kaneria`,
     siteUrl: `https://fenilkaneria.com`,
-    keywords:"fenil kaneria,fenil,kaneria"
+    keywords: "fenil kaneria,fenil,kaneria",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,14 +38,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://fenilkaneria.com',
-        policy: [{ userAgent: '*', allow: '/' }],
+        host: "https://fenilkaneria.com",
+        policy: [{ userAgent: "*", allow: "/" }],
         sitemap: null,
-      }
+      },
     },
-    `gatsby-plugin-netlify`
+    `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

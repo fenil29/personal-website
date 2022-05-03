@@ -20,13 +20,13 @@ import electronSvg from "../asserts/electron.svg"
 import redisSvg from "../asserts/redis.svg"
 import azureSvg from "../asserts/azure.svg"
 import dockerSvg from "../asserts/docker.svg"
-import githubActionsSvg from "../asserts/github-actions.svg";
-
+import githubActionsSvg from "../asserts/github-actions.svg"
 
 let projects = [
   {
     title: "Habbit Space",
     type: "Web Application",
+    path: "habbit-space",
     imgName: "habbit-space.png",
     // DetailsImage:AppointMeetDetailsImage,
     descriptionShort:
@@ -50,6 +50,7 @@ let projects = [
   },
   {
     title: "Appoint Meet",
+    path: "appoint-meet",
     type: "Web Application",
     imgName: "appoint-meet.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -71,6 +72,7 @@ let projects = [
   },
   {
     title: "Park Spot",
+    path: "park-spot",
     type: "Mobile Application (cross platform)",
     imgName: "park-spot.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -93,6 +95,7 @@ let projects = [
   },
   {
     title: "Employee Management System",
+    path: "employee-management-system",
     type: "Web Application",
     imgName: "employee-management-system.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -115,6 +118,7 @@ let projects = [
   },
   {
     title: "Missing Person Report",
+    path: "missing-person-report",
     type: "Web Application",
     imgName: "missing-person-report.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -135,6 +139,7 @@ let projects = [
   },
   {
     title: "Vehicle Speed Detection",
+    path: "vehicle-speed-detection",
     type: "Python Script",
     imgName: "vehicle-speed-detection.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -153,6 +158,7 @@ let projects = [
   },
   {
     title: "Smart Home",
+    path: "smart-home",
     type: "Android Application and IoT",
     imgName: "home-automation.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -172,6 +178,7 @@ let projects = [
   },
   {
     title: "Pomodoro Timer",
+    path: "pomodoro-timer",
     type: "Web Application",
     imgName: "pomodoro-timer.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -191,6 +198,7 @@ let projects = [
   },
   {
     title: "Volume Limiter",
+    path: "volume-limiter",
     type: "Windows Application",
     imgName: "volume-limiter.png",
     // DetailsImage:AppointMeetDetailsImage,
@@ -211,9 +219,11 @@ let projects = [
 
 function Projects() {
   return (
-    <div className="projects main-container" >
+    <div className="projects main-container">
       {/* <h1 className="title">Projects I've Built</h1> */}
-      <h1 className="title" id="projects">Projects</h1>
+      <h1 className="title" id="projects">
+        Projects
+      </h1>
       <div className="projects-container">
         {projects.map((item, index) => (
           <ProjectCard {...item} key={index} />
