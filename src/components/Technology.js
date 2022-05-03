@@ -34,7 +34,6 @@ function Technology() {
           <img className="img" src={cssSvg} alt="cssSvg" />
           <div className="name">CSS</div>
         </div>
-        <div className="technology-card"></div>
         <div className="technology-card">
           <img className="img" src={sassSvg} alt="cssSvg" />
           <div className="name">SASS</div>
