@@ -9,20 +9,22 @@ import {
 
 import "../styles/globals.scss";
 
+let lightModeBackgroundColor = ["#E9ECEF"];
+let darkModeBackgroundColor = ["#373a40"];
 export default function App(props) {
   const { Component, pageProps } = props;
   const [colorScheme, setColorScheme] = useState("light");
-  const [customBackgroundColor, setCustomBackgroundColor] = useState([
-    "#E9ECEF",
-  ]);
+  const [customBackgroundColor, setCustomBackgroundColor] = useState(
+    lightModeBackgroundColor
+  );
   const toggleColorScheme = (value) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
   useEffect(() => {
     console.log(colorScheme);
     if (colorScheme === "light") {
-      setCustomBackgroundColor(["#E9ECEF"]);
+      setCustomBackgroundColor(lightModeBackgroundColor);
     } else {
-      setCustomBackgroundColor(["#373a40"]);
+      setCustomBackgroundColor(darkModeBackgroundColor);
     }
 
     return () => {
