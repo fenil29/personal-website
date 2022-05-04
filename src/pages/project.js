@@ -261,7 +261,7 @@ function Project({ name }) {
     }
     setDarkMode(!darkMode)
   }
-  const [currentProject, setCurrentProject] = useState([])
+  const [currentProject, setCurrentProject] = useState(projects.filter(x => x.path == name))
   useEffect(() => {
     setCurrentProject(projects.filter(x => x.path == name))
 
