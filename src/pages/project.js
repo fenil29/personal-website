@@ -21,11 +21,33 @@ import redisSvg from "../asserts/redis.svg"
 import azureSvg from "../asserts/azure.svg"
 import dockerSvg from "../asserts/docker.svg"
 import githubActionsSvg from "../asserts/github-actions.svg"
+import elasticsearchSvg from "../asserts/elasticsearch.svg"
 
 import NavBarForProject from "../components/NavBarForProject"
 import Footer from "../components/Footer"
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 let projects = [
+  {
+    title: "Swift Search",
+    type: "Web Application",
+    path: "swift-search",
+    imgName: "swift-search.png",
+    // DetailsImage:AppointMeetDetailsImage,
+    descriptionShort:
+      "Swift search is the search engine designed to search across big data efficiently and quickly.",
+    descriptionLong:
+      "Swift search is the search engine designed to search across big data efficiently and quickly. The dataset contains 20 million records(20GB). The features of swift search include real-time auto-suggestion, filters that are updated in real-time according to the search term, and raking the search results based on relevance. Each record in the database is stored and indexed according to how it is accessed to improve efficiency.",
+    button: {
+      viewCodeUrl: "https://github.com/fenil29/swift-search-elasticsearch-search-engine",
+      viewProjectUrl: "",
+    },
+    technologyUsed: [
+      { name: "ReactJs", img: reactSvg },
+      { name: "ElasticSearch", img: elasticsearchSvg },
+      { name: "Docker", img: dockerSvg },
+      { name: "Azure", img: azureSvg },
+    ],
+  },
   {
     title: "Habbit Space",
     type: "Web Application",
