@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react"
 
+import Footer from "../components/Footer"
+import ProjectCardDynamic from "../components/ProjectCardDynamic"
+
 import "./project.css"
 
-import ProjectCardDynamic from "../components/ProjectCardDynamic"
 
 import javaScriptSvg from "../asserts/javascript.svg"
 import pythonSvg from "../asserts/python.svg"
@@ -24,8 +26,6 @@ import githubActionsSvg from "../asserts/github-actions.svg"
 import elasticsearchSvg from "../asserts/elasticsearch.svg"
 
 import NavBarForProject from "../components/NavBarForProject"
-import Footer from "../components/Footer"
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 let projects = [
   {
@@ -252,9 +252,7 @@ let colorList = [
 ]
 function Project({ name }) {
   const [darkMode, setDarkMode] = useState(false)
-  // const [currentProject, setCurrentProject] = useState(
-  //
-  // )
+
   let currentProject = projects.filter(x => x.path == name)
   let handleDarkModeClick = () => {
     for (let i of colorList) {
@@ -267,11 +265,6 @@ function Project({ name }) {
     }
     setDarkMode(!darkMode)
   }
-  // useEffect(() => {
-  //   setCurrentProject(projects.filter(x => x.path == name))
-  //   return () => {}
-  // }, [])
-
   return (
     <Router>
       <>

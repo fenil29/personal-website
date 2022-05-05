@@ -1,35 +1,16 @@
 import React, { useState } from "react"
-// import "./ProjectCard.css"
 import { Button } from "antd"
-// import { GithubOutlined, LinkOutlined, CloseOutlined } from "@ant-design/icons";
 import { AiOutlineLink } from "react-icons/ai"
 import { FaGithub } from "react-icons/fa"
-import { MdClose } from "react-icons/md"
-
-import Modal from "react-modal"
 import Image from "./image"
-import NavBarForProject from "./NavBarForProject"
-
 function ProjectCardDynamic(props) {
-
-
   return (
     <div className="project-dynamic-route">
-      {/* <Modal
-        isOpen={true}
-        onRequestClose={handleCancel}
-        overlayClassName="project-details-modal-overlay"
-        className="project-details-modal"
-        closeTimeoutMS={300}
-      > */}
       <div className="project-details-modal-content">
         <div className="project-img">
-          {/* <img src={appointMeetImg} alt="project" style={{ width: "100%" }} /> */}
-          {/* <CardPreviewImage name={"appoint-meet.png"} alt="project-image" /> */}
           <Image type={"details-image"} filename={props.imgName} />
         </div>
         <div className="content-container">
-          {/* <MdClose className="close-icon" onClick={handleCancel} /> */}
           <div className="title">
             <h1>{props.title}</h1>
             <h3 className="project-type">{props.type}</h3>
@@ -47,10 +28,6 @@ function ProjectCardDynamic(props) {
                 </div>
               ))}
             </div>
-            {/* <div className="project-technology-card">
-                <img className="img" src={expressSvg} alt="express" style={{color:"white"}} />
-                <div>ExpressJs</div>
-              </div> */}
           </div>
           <div style={{ marginBottom: "65px" }}></div>
           <div className="project-details-button-container">
@@ -97,7 +74,6 @@ function ProjectCardDynamic(props) {
           </div>
         </div>
       </div>
-      {/* </Modal> */}
     </div>
   )
 }
