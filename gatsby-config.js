@@ -4,7 +4,7 @@ module.exports = {
     description: `Hello,I'm Fenil Kaneria`,
     author: `Fenil Kaneria`,
     siteUrl: `https://fenilkaneria.com`,
-    keywords: "fenil kaneria,fenil,kaneria",
+    keywords: "fenil kaneria,fenil,kaneria, fenil29",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

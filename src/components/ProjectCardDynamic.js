@@ -11,14 +11,7 @@ import Image from "./image"
 import NavBarForProject from "./NavBarForProject"
 
 function ProjectCardDynamic(props) {
-  const [visible, setVisible] = useState(false)
-  let onViewDetails = () => {
-    setVisible(true)
-    // document.getElementsByClassName("project-card-container").className = "project-card-container-details";
-  }
-  let handleCancel = e => {
-    setVisible(false)
-  }
+
 
   return (
     <div className="project-dynamic-route">

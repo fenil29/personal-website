@@ -12,12 +12,9 @@ import Technology from "../components/Technology"
 import History from "../components/History"
 import Contact from "../components/Contact"
 import "antd/dist/antd.css"
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
 const IndexPage = () => (
-  // <BrowserRouter>
   <Layout>
-    {/* <Routes> */}
     <SEO title="Fenil Kaneria" />
     <NavBar />
     <Home />
@@ -25,10 +22,7 @@ const IndexPage = () => (
     <Technology />
     <History />
     <Contact />
-    {/* <Route path="/" element={<div>Projct</div>} /> */}
-    {/* </Routes> */}
   </Layout>
-  // </BrowserRouter>
 )
 
 export default IndexPage
