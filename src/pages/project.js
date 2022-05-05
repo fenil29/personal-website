@@ -251,6 +251,10 @@ let colorList = [
 ]
 function Project({ name }) {
   const [darkMode, setDarkMode] = useState(false)
+  // const [currentProject, setCurrentProject] = useState(
+  //  
+  // )
+  let currentProject = projects.filter(x => x.path == name);
   let handleDarkModeClick = () => {
     for (let i of colorList) {
       document.documentElement.style.setProperty(
@@ -262,14 +266,10 @@ function Project({ name }) {
     }
     setDarkMode(!darkMode)
   }
-  const [currentProject, setCurrentProject] = useState(
-    projects.filter(x => x.path == name)
-  )
-  useEffect(() => {
-    setCurrentProject(projects.filter(x => x.path == name))
-
-    return () => {}
-  }, [])
+  // useEffect(() => {
+  //   setCurrentProject(projects.filter(x => x.path == name))
+  //   return () => {}
+  // }, [])
 
   return (
     <>
@@ -300,29 +300,25 @@ function Project({ name }) {
       </div>
       <NavBarForProject />
    
-      <div className="projects-container">
-           {currentProject.map((item, index) => (
-             <ProjectCardDynamic {...item} key={index} />
-           ))}
-         </div>
-      {/* {currentProject.length !== 0 ? (
+
+      {currentProject.length !== 0 ? (
            <div className="projects-container">
            {currentProject.map((item, index) => (
              <ProjectCardDynamic {...item} key={index} />
            ))}
          </div>
       ) : (
-        <></>
-        // <div className="dynamic-project-not-found">
-        //   <div className="not-found">
-        //     <h1>404</h1>
-        //     <h2>NOT FOUND</h2>
-        //     <div className="text">
-        //       You just hit a route that doesn&#39;t exist...
-        //     </div>
-        //   </div>
-        // </div>
-      )} */}
+
+        <div className="dynamic-project-not-found">
+          <div className="not-found">
+            <h1>404</h1>
+            <h2>NOT FOUND</h2>
+            <div className="text">
+              You just hit a route that doesn&#39;t exist...
+            </div>
+          </div>
+        </div>
+      )}
       <Footer />
     </>
     // <div className="projects main-container">
