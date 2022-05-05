@@ -18,6 +18,7 @@ import nginxSvg from "../asserts/nginx.svg"
 import digitalOceanSvg from "../asserts/digital-ocean.svg"
 import azureSvg from "../asserts/azure.svg"
 import sassSvg from "../asserts/sass.svg"
+import nextjsSvg from "../asserts/nextjs.svg"
 
 function Technology() {
   return (
@@ -49,6 +50,14 @@ function Technology() {
         <div className="technology-card">
           <img className="img" src={reactSvg} alt="reactSvg" />
           <div className="name">React</div>
+        </div>
+        <div className="technology-card">
+          <img className="img" src={gatsbySvg} alt="gatsbySvg" />
+          <div className="name">Gatsby</div>
+        </div>
+        <div className="technology-card">
+          <img className="img" src={nextjsSvg} alt="gatsbySvg" />
+          <div className="name">NextJs</div>
         </div>
         <div className="technology-card">
           <img className="img" src={gatsbySvg} alt="gatsbySvg" />
