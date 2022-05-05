@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-// import "./Projects.css"
+import "./project.css"
 
 import ProjectCardDynamic from "../components/ProjectCardDynamic"
 

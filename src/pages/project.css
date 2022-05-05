@@ -1,0 +1,22 @@
+.project-dynamic-route {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-color: var(--secondary-font-color);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  /* position: relative;
+    z-index: 100; */
+}
+.project-dynamic-route .project-details-modal-content {
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.project-img {
+  /* position: relative;
+    z-index: 10; */
+  /* border-radius: 10px; */
+}

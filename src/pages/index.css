@@ -121,25 +121,6 @@ button span {
   margin: auto;
 }
 
-.project-dynamic-route {
-  margin-top: 100px;
-  margin-bottom: 20px;
-  border: 1px solid;
-  border-color: var(--secondary-font-color);
-  border-radius: 10px;
-  /* width: 90%; */
-  /* max-width: 1400px; */
-  /* position: relative;
-  z-index: 100; */
-}
-.project-dynamic-route .project-details-modal-content {
-  padding: 20px;
-}
-.project-img {
-  /* position: relative;
-  z-index: 10; */
-  /* border-radius: 10px; */
-}
 
 @media only screen and (max-width: 950px) {
   .main-container {
