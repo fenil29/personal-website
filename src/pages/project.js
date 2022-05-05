@@ -38,7 +38,8 @@ let projects = [
     descriptionLong:
       "Swift search is the search engine designed to search across big data efficiently and quickly. The dataset contains 20 million records(20GB). The features of swift search include real-time auto-suggestion, filters that are updated in real-time according to the search term, and raking the search results based on relevance. Each record in the database is stored and indexed according to how it is accessed to improve efficiency.",
     button: {
-      viewCodeUrl: "https://github.com/fenil29/swift-search-elasticsearch-search-engine",
+      viewCodeUrl:
+        "https://github.com/fenil29/swift-search-elasticsearch-search-engine",
       viewProjectUrl: "",
     },
     technologyUsed: [
@@ -261,7 +262,9 @@ function Project({ name }) {
     }
     setDarkMode(!darkMode)
   }
-  const [currentProject, setCurrentProject] = useState(projects.filter(x => x.path == name))
+  const [currentProject, setCurrentProject] = useState(
+    projects.filter(x => x.path == name)
+  )
   useEffect(() => {
     setCurrentProject(projects.filter(x => x.path == name))
 
@@ -295,23 +298,25 @@ function Project({ name }) {
         )}
       </div>
       <NavBarForProject />
-      <div className="projects-container">
-        {currentProject.length !== 0 ? (
-          currentProject.map((item, index) => (
-            <ProjectCardDynamic {...item} key={index} />
-          ))
-        ) : (
-          <div className="dynamic-project-not-found">
-            <div className="not-found">
-              <h1>404</h1>
-              <h2>NOT FOUND</h2>
-              <div className="text">
-                You just hit a route that doesn&#39;t exist...
-              </div>
+   
+
+      {currentProject.length !== 0 ? (
+           <div className="projects-container">
+           {currentProject.map((item, index) => (
+             <ProjectCardDynamic {...item} key={index} />
+           ))}
+         </div>
+      ) : (
+        <div className="dynamic-project-not-found">
+          <div className="not-found">
+            <h1>404</h1>
+            <h2>NOT FOUND</h2>
+            <div className="text">
+              You just hit a route that doesn&#39;t exist...
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
       <Footer />
     </>
     // <div className="projects main-container">
