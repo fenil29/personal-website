@@ -1,6 +1,6 @@
-import Head from "next/head";
-import NavBar from "../components/NavBar";
-import Home from "../components/Home";
+import Head from 'next/head'
+import NavBar from '../components/NavBar'
+import Home from '../components/Home'
 
 export default function Index() {
   return (
@@ -13,5 +13,5 @@ export default function Index() {
       <NavBar />
       <Home />
     </div>
-  );
+  )
 }
