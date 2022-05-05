@@ -24,15 +24,33 @@ function Home() {
           <h1>Fenil Kaneria</h1>
           <h2>Software Engineer</h2>
           <div className={styles.iconContainer}>
-            <ActionIcon size="xl" variant="hover" radius="md">
-              <BrandGithub size={30} />
-            </ActionIcon>
-            <ActionIcon size="xl" variant="hover" radius="md">
-              <BrandTwitter size={30} />
-            </ActionIcon>
-            <ActionIcon size="xl" variant="hover" radius="md">
-              <BrandLinkedin size={30} />
-            </ActionIcon>
+            <a
+              href="https://github.com/fenil29"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ActionIcon size="xl" variant="hover" radius="md">
+                <BrandGithub size={30} />
+              </ActionIcon>
+            </a>
+            <a
+              href="https://linkedin.com/in/fenil-kaneria/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ActionIcon size="xl" variant="hover" radius="md">
+                <BrandLinkedin size={30} />
+              </ActionIcon>
+            </a>
+            <a
+              href="https://twitter.com/FenilKaneria"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ActionIcon size="xl" variant="hover" radius="md">
+                <BrandTwitter size={30} />
+              </ActionIcon>
+            </a>
           </div>
         </div>
         <div className={styles.imageContainer}>

@@ -1,6 +1,16 @@
 .navBarContainer {
+  position: relative;
+  height: 70px;
+  //   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .darkModeIcon {
   //   padding: 10px;
+  //   position: absolute;
+  //   right: 0px;
+  //   top: 0px;
+  margin: 20px;
 }
