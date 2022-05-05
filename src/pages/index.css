@@ -128,7 +128,7 @@ button span {
   border-color: var(--secondary-font-color);
   border-radius: 10px;
   /* width: 90%; */
-  max-width: 1400px;
+  /* max-width: 1400px; */
   /* position: relative;
   z-index: 100; */
 }
