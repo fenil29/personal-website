@@ -1,6 +1,6 @@
 .project-card-container {
-  width: 270px;
-  height: 430px;
+  width: 280px;
+  height: 390px;
   overflow: hidden;
   background-color: var(--secondary-background-color);
   border-radius: 5px;
@@ -20,6 +20,8 @@
   padding-bottom: 20px;
 }
 .project-card-container h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
   text-align: center;
   color: var(--secondary-font-color) !important;
 }
@@ -32,7 +34,7 @@
 }
 .project-card-container p {
   text-align: justify;
-  max-height: 110px;
+  max-height: 96px;
 }
 
 .project-button .icon path {

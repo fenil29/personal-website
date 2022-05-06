@@ -6,7 +6,7 @@ import { Button } from "antd"
 import Particles from "react-tsparticles"
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
-
+import Image from "../components/image"
 let colorList = [
   "--primary-color",
   "--primary-background-color",
@@ -339,51 +339,19 @@ function Home() {
         )}
       </div>
       <div className="particle-background-content">
-        <div className="home-text-content">
-          <h1>Hello, I'm Fenil Kaneria</h1>
-          <h2>Software Engineer</h2>
-          {/* <h2>UNDER CONSTRUCTION</h2>
-          <h3>WEBSITE IS COMING SOON</h3> */}
-
-          <div className="icon-container">
-            <a
-              href="https://github.com/fenil29"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="icon" />
-            </a>
-            <a
-              href="https://in.linkedin.com/in/fenil-kaneria-2a76bb153"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="icon" />
-            </a>
-            <a
-              href="https://twitter.com/FenilKaneria"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="icon" />
-            </a>
-            {/* <a
-                href="mailto:myemail@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MdEmail className="icon" style={{ fontSize: "38px" }} />
-              </a> */}
+        <div className="homeContainer">
+          <div className="textContainer">
+            <h3>Hello 👋, I am </h3>
+            <h1>Fenil Kaneria</h1>
+            <h2>Software Engineer</h2>
           </div>
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-button"
-          >
-            {/* <Button>My Resume</Button> */}
-            Resume
-          </a>
+          <div className="imageContainer">
+            <Image
+              type={"details-image"}
+              className="profile-picture"
+              filename={"fenil.png"}
+            />
+          </div>
         </div>
       </div>
     </div>
