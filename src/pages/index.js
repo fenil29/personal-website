@@ -11,10 +11,10 @@ import Projects from "../components/Projects"
 import Technology from "../components/Technology"
 import History from "../components/History"
 import Contact from "../components/Contact"
-import "antd/dist/antd.css"
+import 'antd/dist/antd.css';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout>    
     <SEO title="Fenil Kaneria" />
     <NavBar />
     <Home />
