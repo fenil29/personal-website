@@ -344,7 +344,47 @@ function Home() {
             <h3>Hello 👋, I am </h3>
             <h1>Fenil Kaneria</h1>
             <h2>Software Engineer</h2>
+            <div className="icon-container">
+              <a
+                href="https://github.com/fenil29"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="icon" />
+              </a>
+              <a
+                href="https://linkedin.com/in/fenil-kaneria-2a76bb153"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="icon" />
+              </a>
+              <a
+                href="https://twitter.com/FenilKaneria"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter className="icon" />
+              </a>
+              {/* <a
+                href="mailto:myemail@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MdEmail className="icon" style={{ fontSize: "38px" }} />
+              </a> */}
+            </div>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-button"
+            >
+              {/* <Button>My Resume</Button> */}
+              Resume
+            </a>
           </div>
+
           <div className="imageContainer">
             <Image
               type={"details-image"}
