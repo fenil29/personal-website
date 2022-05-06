@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ActionIcon, useMantineColorScheme } from '@mantine/core'
 import { Sun, Moon } from 'tabler-icons-react'
 import styles from '../styles/NavBar.module.scss'

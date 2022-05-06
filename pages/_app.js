@@ -1,36 +1,38 @@
-import { useEffect, useState } from "react";
-import { AppProps } from "next/app";
-import Head from "next/head";
+import { useEffect, useState } from 'react'
+import { AppProps } from 'next/app'
+import Head from 'next/head'
 import {
   MantineProvider,
   ColorSchemeProvider,
   ColorScheme,
-} from "@mantine/core";
+} from '@mantine/core'
 
-import "../styles/globals.scss";
+import '../styles/globals.scss'
 
-let lightModeBackgroundColor = ["#E9ECEF"];
-let darkModeBackgroundColor = ["#373a40"];
+// let lightModeBackgroundColor = ["#E9ECEF"];
+let lightModeBackgroundColor = ['#f8f9fa']
+// let darkModeBackgroundColor = ["#373a40"];
+let darkModeBackgroundColor = ['#25262b']
 export default function App(props) {
-  const { Component, pageProps } = props;
-  const [colorScheme, setColorScheme] = useState("light");
+  const { Component, pageProps } = props
+  const [colorScheme, setColorScheme] = useState('light')
   const [customBackgroundColor, setCustomBackgroundColor] = useState(
-    lightModeBackgroundColor
-  );
+    lightModeBackgroundColor,
+  )
   const toggleColorScheme = (value) =>
-    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'))
   useEffect(() => {
-    console.log(colorScheme);
-    if (colorScheme === "light") {
-      setCustomBackgroundColor(lightModeBackgroundColor);
+    console.log(colorScheme)
+    if (colorScheme === 'light') {
+      setCustomBackgroundColor(lightModeBackgroundColor)
     } else {
-      setCustomBackgroundColor(darkModeBackgroundColor);
+      setCustomBackgroundColor(darkModeBackgroundColor)
     }
 
     return () => {
       // second
-    };
-  }, [colorScheme]);
+    }
+  }, [colorScheme])
 
   return (
     <>
@@ -49,7 +51,7 @@ export default function App(props) {
           theme={{
             colorScheme,
             colors: {
-              "custom-background": customBackgroundColor,
+              'custom-background': customBackgroundColor,
             },
           }}
           withCSSVariables
@@ -67,5 +69,5 @@ export default function App(props) {
         </MantineProvider>
       </ColorSchemeProvider>
     </>
-  );
+  )
 }

@@ -30,7 +30,7 @@ function Home() {
               rel="noopener noreferrer"
             >
               <ActionIcon size="xl" variant="hover" radius="md">
-                <BrandGithub size={30} />
+                <BrandGithub size={32} />
               </ActionIcon>
             </a>
             <a
@@ -39,7 +39,7 @@ function Home() {
               rel="noopener noreferrer"
             >
               <ActionIcon size="xl" variant="hover" radius="md">
-                <BrandLinkedin size={30} />
+                <BrandLinkedin size={32} />
               </ActionIcon>
             </a>
             <a
@@ -48,7 +48,7 @@ function Home() {
               rel="noopener noreferrer"
             >
               <ActionIcon size="xl" variant="hover" radius="md">
-                <BrandTwitter size={30} />
+                <BrandTwitter size={32} />
               </ActionIcon>
             </a>
           </div>

@@ -1,0 +1,15 @@
+.projectContainer {
+  margin-top: 100px;
+  padding-top: 50px;
+  // background-color: var(--mantine-color-custom-background-0);
+}
+.projectCardContainer {
+  width: 90%;
+  max-width: 1300px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+}

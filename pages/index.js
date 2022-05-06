@@ -1,7 +1,10 @@
 import Head from 'next/head'
+
+import styles from '../styles/Index.module.scss'
+
 import NavBar from '../components/NavBar'
 import Home from '../components/Home'
-import styles from '../styles/Index.module.scss'
+import Projects from '../components/Projects'
 
 export default function Index() {
   return (
@@ -13,6 +16,7 @@ export default function Index() {
       </Head>
       <NavBar />
       <Home />
+      <Projects />
     </div>
   )
 }
