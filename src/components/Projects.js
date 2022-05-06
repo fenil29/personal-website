@@ -35,7 +35,8 @@ let projects = [
     descriptionLong:
       "Swift search is the search engine designed to search across big data efficiently and quickly. The dataset contains 20 million records(20GB). The features of swift search include real-time auto-suggestion, filters that are updated in real-time according to the search term, and raking the search results based on relevance. Each record in the database is stored and indexed according to how it is accessed to improve efficiency.",
     button: {
-      viewCodeUrl: "https://github.com/fenil29/swift-search-elasticsearch-search-engine",
+      viewCodeUrl:
+        "https://github.com/fenil29/swift-search-elasticsearch-search-engine",
       viewProjectUrl: "",
     },
     technologyUsed: [
@@ -98,8 +99,10 @@ let projects = [
     type: "Mobile Application (cross platform)",
     imgName: "park-spot.png",
     // DetailsImage:AppointMeetDetailsImage,
+    // descriptionShort:
+    // "Park Spot is a mobile application to find the empty parking lot around you using the inbuilt map functionality and automate and the parking entry and exit process using QR code. This application collects data on each entry and exit of the vehicle and analyses it for the best business decisions.",
     descriptionShort:
-      "Park Spot is a mobile application to find the empty parking lot around you using the inbuilt map functionality and automate and the parking entry and exit process using QR code. This application collects data on each entry and exit of the vehicle and analyses it for the best business decisions.",
+      "Park Spot is a mobile application to find the empty parking lot and automate the entry,exit, parking spot allocation and payment calculation process.",
     descriptionLong:
       "Park Spot is a cross-platform mobile application to find the empty parking lot around you using the inbuilt map functionality and automate and the parking entry and exit process using QR code. The drivers can easily scan the QR code to get the parking spot. The app is user friendly. The app takes the time of entry when a spot is provided and the time of exit when the spot is left. This application also collects all the entry and exit data of each vehicle and analyzes it for the best business decisions. In this project, there is also an automated billing system that produces the bill with respect to the time the vehicle spends in the parking lot.",
     button: {
@@ -144,8 +147,10 @@ let projects = [
     type: "Web Application",
     imgName: "missing-person-report.png",
     // DetailsImage:AppointMeetDetailsImage,
+    // descriptionShort:
+    //   "Web Application that shows all the missing persons. You can create an account and upload the missing person details with photos and so other people can help you.",
     descriptionShort:
-      "Web Application that shows all the missing persons. You can create an account and upload the missing person details with photos and so other people can help you.",
+      "Web Application that help to find missing person by providing platform to register and view missing persons",
     descriptionLong:
       "Web Application that shows all the missing persons. You can create an account and upload the missing person details with photos and so other people can help you.",
     button: {
