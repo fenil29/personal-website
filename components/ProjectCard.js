@@ -8,6 +8,7 @@ import {
   Group,
   useMantineTheme,
   useMantineColorScheme,
+  ScrollArea,
 } from '@mantine/core'
 
 function ProjectCard(props) {
@@ -16,6 +17,7 @@ function ProjectCard(props) {
     <div className={styles.projectCardContainer}>
       <Card
         shadow="sm"
+        radius="md"
         p="lg"
         className={styles.projectCard}
         style={{
@@ -25,8 +27,8 @@ function ProjectCard(props) {
         <Card.Section>
           <Image
             src={props.projectImg}
-            height={45}
-            width={"100%"}
+            height={40}
+            width={'100%'}
             // height={160}
             objectFit="cover"
             alt="Project Img"
@@ -35,15 +37,31 @@ function ProjectCard(props) {
         </Card.Section>
 
         <h1 weight={500}>{props.title}</h1>
+        <div className={styles.badgeContainer}>
+          {props.technologyUsed.map((tech, index) => (
+            <Badge
+              size="md"
+              radius="sm"
+              // variant="outline"
+              key={index}
+              className={styles.badge}
+            >
+              {tech.name}
+            </Badge>
+          ))}
+        </div>
+
         {/* <Group position="apart"> */}
         {/* <Text weight={500}>Norway Fjord Adventures</Text> */}
         {/* <Badge color="pink" variant="light">
             Web
           </Badge> */}
         {/* </Group> */}
-
-        <p>{props.descriptionShort}</p>
-
+        <div className={styles.shortDescription}>
+          <ScrollArea style={{ height: 100 }} scrollHideDelay={0}>
+            {props.descriptionShort}
+          </ScrollArea>
+        </div>
         <Button variant="subtle" fullWidth>
           View Details
         </Button>

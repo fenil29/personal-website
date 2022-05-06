@@ -271,12 +271,6 @@ function Projects() {
             ? ''
             : ' var(--mantine-color-custom-background-0)',
       }}
-      sx={(theme) => ({
-        // color: dark ? 'dark' : theme.colors.blue,
-        styles: {
-          backgroundColor: red,
-        },
-      })}
     >
       <h1 className="title">Projects</h1>
       <div className={styles.projectCardContainer}>

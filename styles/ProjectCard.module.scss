@@ -1,7 +1,7 @@
 .projectCardContainer {
   //   flex: 1;
-  width: 300px;
-  margin: 20px;
+  width: 350px;
+  margin: 10px;
 }
 
 .projectCard {
@@ -10,23 +10,28 @@
   h1 {
     margin: 0px;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: 500;
     font-size: 18px;
     text-align: center;
   }
-  p {
-    margin: 0px;
-    margin-bottom: 5px;
-    // padding-bottom: 2px;
-    font-size: 14px;
-    height: 90px;
-    overflow-y: scroll;
-  }
-  img {
-    // max-height: 100px;
-    // object-fit: cover;
-    // width: 100% !important;
-    // width: 100%;
-  }
+}
+.badgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // min-height: 100px;
+  margin-bottom: 5px;
+}
+.badge {
+  margin: 2px;
+}
+.shortDescription {
+  margin: 0px;
+  margin-bottom: 5px;
+  // padding-bottom: 2px;
+  font-size: 14px;
+  text-align: justify;
+  // height: 90px;
+  // overflow-y: scroll;
 }
