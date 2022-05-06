@@ -33,6 +33,11 @@
   --dark-mode-secondary-background-color: #172a45;
   --dark-mode-primary-font-color: #ccd6f6;
   --dark-mode-secondary-font-color: #ffffff;
+  /* --dark-mode-primary-color: #1965c7;
+  --dark-mode-primary-background-color: #1a1b1e;
+  --dark-mode-secondary-background-color: #25262b;
+  --dark-mode-primary-font-color: #ccd6f6;
+  --dark-mode-secondary-font-color: #ffffff; */
 
   --light-mode-primary-color: #4582d8;
   --light-mode-primary-background-color: #f1f3f7;
@@ -120,7 +125,6 @@ button span {
   width: 80%;
   margin: auto;
 }
-
 
 @media only screen and (max-width: 950px) {
   .main-container {
