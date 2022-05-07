@@ -62,7 +62,7 @@ let technologyList = [
 function Technology() {
   return (
     <div className={styles.technologyContainer}>
-      <h1 className="title">Technologies I've Worked With</h1>
+      <h1 className="title">Technologies I&apos;ve Worked With</h1>
 
       <div className={styles.technologyCardContainer}>
         {technologyList.map((tech, index) => (

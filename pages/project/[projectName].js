@@ -3,7 +3,7 @@ import { useState } from 'react'
 import ProjectCardModel from '../../components/ProjectCardModel'
 import projects from '../../components/projectList'
 
-function projectName(props) {
+function ProjectName(props) {
     const router = useRouter()
   //   const [currentProjects, setCurrentProjects] = useState(
   //     projects.filter((p) => p.projectURL === router.query.projectName),
@@ -22,7 +22,7 @@ function projectName(props) {
   )
 }
 
-export default projectName
+export default ProjectName
 
 export function getStaticProps(context) {
   // console.log(projects.filter((p) => p.projectURL === context.params.projectName))
