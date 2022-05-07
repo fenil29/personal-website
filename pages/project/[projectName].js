@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import ProjectCardModel from '../../components/ProjectCardModel'
 import projects from '../../components/projectList'
-
+import NavBar from '../../components/NavBar'
 function ProjectName(props) {
   const router = useRouter()
   //   const [currentProjects, setCurrentProjects] = useState(
@@ -17,7 +17,13 @@ function ProjectName(props) {
 
   return (
     <div>
-      <ProjectCardModel {...props} onClose={handleClose} opened={true} />
+      {/* <NavBar /> */}
+      <ProjectCardModel
+        {...props}
+        onClose={handleClose}
+        opened={true}
+        isDynamicPage={true}
+      />
     </div>
   )
 }
