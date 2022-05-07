@@ -1,12 +1,12 @@
 import styles from '../styles/EandE.module.scss'
-import { ThemeIcon, Text, Avatar, Timeline } from '@mantine/core'
+import { Text, Timeline } from '@mantine/core'
 import { Book2, Briefcase } from 'tabler-icons-react'
 function EandE() {
   return (
     <div className={styles.eandeContainer}>
       <h1 className="title">Experience and Education</h1>
       <div className={styles.timelineContainer}>
-        <Timeline lineWidth={3} radius="md" >
+        <Timeline lineWidth={3} radius="md">
           <Timeline.Item
             title="Master of Applied Computing"
             bulletSize={35}

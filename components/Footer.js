@@ -1,16 +1,5 @@
 import styles from '../styles/Footer.module.scss'
-import {
-  TextInput,
-  Checkbox,
-  Textarea,
-  Button,
-  Group,
-  Box,
-  Center,
-  Divider,
-  ActionIcon,
-} from '@mantine/core'
-import Image from 'next/image'
+import { Center, Divider, ActionIcon } from '@mantine/core'
 import nextjsSvg from '../public/technology-icon/nextjs2.svg'
 import { Link } from 'tabler-icons-react'
 

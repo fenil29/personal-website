@@ -2,12 +2,9 @@ import styles from '../styles/ProjectCardModel.module.scss'
 import {
   Modal,
   Button,
-  Group,
   Divider,
   Card,
-  Text,
   useMantineColorScheme,
-  Center,
 } from '@mantine/core'
 import Image from 'next/image'
 

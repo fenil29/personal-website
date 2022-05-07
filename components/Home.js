@@ -4,15 +4,7 @@ import Image from 'next/image'
 import profilePic from '../public/fenil.png'
 import styles from '../styles/Home.module.scss'
 
-import {
-  Card,
-  Text,
-  Badge,
-  Button,
-  Group,
-  useMantineTheme,
-  ActionIcon,
-} from '@mantine/core'
+import { ActionIcon } from '@mantine/core'
 import { BrandGithub, BrandTwitter, BrandLinkedin } from 'tabler-icons-react'
 
 function Home() {

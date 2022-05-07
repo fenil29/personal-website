@@ -1,14 +1,6 @@
 import { useEffect } from 'react'
 import styles from '../styles/Contact.module.scss'
-import {
-  TextInput,
-  Checkbox,
-  Textarea,
-  Button,
-  Group,
-  Box,
-  Center,
-} from '@mantine/core'
+import { TextInput, Textarea, Button, Center } from '@mantine/core'
 import { useForm } from '@mantine/form'
 import { ActionIcon } from '@mantine/core'
 import { At, User, Inbox, Message, CircleCheck } from 'tabler-icons-react'

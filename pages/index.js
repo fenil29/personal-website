@@ -9,15 +9,7 @@ import Technology from '../components/Technology'
 import EandE from '../components/EandE'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
-import {
-  Card,
-  Text,
-  Badge,
-  Button,
-  Group,
-  useMantineTheme,
-  useMantineColorScheme,
-} from '@mantine/core'
+import { useMantineColorScheme } from '@mantine/core'
 export default function Index() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
 

@@ -1,16 +1,7 @@
 import styles from '../styles/Technology.module.scss'
 
 import Image from 'next/image'
-import {
-  Modal,
-  Button,
-  Group,
-  Divider,
-  Card,
-  Text,
-  useMantineColorScheme,
-  Center,
-} from '@mantine/core'
+import { Card } from '@mantine/core'
 
 import htmlSvg from '../public/technology-icon/html-5.svg'
 import cssSvg from '../public/technology-icon/css-3.svg'
