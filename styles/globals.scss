@@ -19,7 +19,6 @@ h1.title {
   text-align: center;
 }
 
-
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -28,4 +27,8 @@ h1.title {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   background: #838383;
+}
+
+* {
+  transition: background-color 200ms ease-in;
 }
