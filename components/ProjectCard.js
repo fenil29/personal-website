@@ -50,6 +50,7 @@ function ProjectCard(props) {
           </Card.Section>
 
           <h1 weight={500}>{props.title}</h1>
+
           <ScrollArea style={{ height: 84 }} scrollHideDelay={0}>
             <div className={styles.badgeContainer}>
               {props.technologyUsed.map((tech, index) => (
@@ -67,17 +68,18 @@ function ProjectCard(props) {
               ))}
             </div>
           </ScrollArea>
+          <div className={styles.shortDescription}>
+            <ScrollArea style={{ height: 94 }} scrollHideDelay={0}>
+              {props.descriptionShort}
+            </ScrollArea>
+          </div>
           {/* <Group position="apart"> */}
           {/* <Text weight={500}>Norway Fjord Adventures</Text> */}
           {/* <Badge color="pink" variant="light">
             Web
           </Badge> */}
           {/* </Group> */}
-          <div className={styles.shortDescription}>
-            <ScrollArea style={{ height: 94 }} scrollHideDelay={0}>
-              {props.descriptionShort}
-            </ScrollArea>
-          </div>
+
           <Center>
             <Button
               // variant="subtle"
