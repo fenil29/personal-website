@@ -4,7 +4,7 @@ import ProjectCardModel from '../../components/ProjectCardModel'
 import projects from '../../components/projectList'
 
 function ProjectName(props) {
-    const router = useRouter()
+  const router = useRouter()
   //   const [currentProjects, setCurrentProjects] = useState(
   //     projects.filter((p) => p.projectURL === router.query.projectName),
   //   )
