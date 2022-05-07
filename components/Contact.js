@@ -68,7 +68,7 @@ function Contact() {
               //   label="Your email"
               placeholder="Name"
               icon={<User size={18} />}
-              size="md"
+              size="lg"
               mb="10px"
               // required
               {...form.getInputProps('name')}
@@ -78,7 +78,7 @@ function Contact() {
               //   label="Your email"
               placeholder="Email"
               icon={<At size={18} />}
-              size="md"
+              size="lg"
               mb="10px"
               {...form.getInputProps('email')}
               // required
@@ -88,7 +88,7 @@ function Contact() {
               //   label="Your email"
               placeholder="Subject"
               icon={<Inbox size={18} />}
-              size="md"
+              size="lg"
               mb="10px"
               // required
               {...form.getInputProps('subject')}
@@ -98,7 +98,7 @@ function Contact() {
               //   label="Your email"
               placeholder="Message"
               icon={<Message size={18} />}
-              size="md"
+              size="lg"
               mb="10px"
               // required
               {...form.getInputProps('message')}

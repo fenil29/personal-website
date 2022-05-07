@@ -8,4 +8,16 @@
   //   a {
   //     display: flex;
   //   }
+  p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .footerContainer {
+    font-size: 14px;
+  }
 }

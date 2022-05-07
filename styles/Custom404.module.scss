@@ -1,0 +1,35 @@
+.custom404Container {
+  svg {
+    // width: 300px;
+    // height: 300px;
+  }
+  button {
+    display: inline;
+    margin-right: 4px;
+  }
+}
+.textContainer {
+  margin: 20px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .textContainer {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 265px) {
+  .textContainer {
+    font-size: 8px;
+  }
+}

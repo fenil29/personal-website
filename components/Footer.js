@@ -1,7 +1,7 @@
 import styles from '../styles/Footer.module.scss'
 import { Center, Divider, ActionIcon } from '@mantine/core'
 import nextjsSvg from '../public/technology-icon/nextjs2.svg'
-import { Link } from 'tabler-icons-react'
+import { Link, BrandGithub } from 'tabler-icons-react'
 
 function Footer() {
   return (
@@ -13,13 +13,16 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Center>
-            <ActionIcon>
-              <Link size={16} />
-            </ActionIcon>
-            Designed & Developed by Fenil Kaneria © {new Date().getFullYear()}{' '}
+          <p>
+            <Link size={18} />
             &nbsp;
-          </Center>
+            {/* <ActionIcon></ActionIcon> */}
+            Designed & Developed by Fenil Kaneria
+            {/* © {new Date().getFullYear()}{' '} */}
+            {/* <ActionIcon></ActionIcon> */} &nbsp;
+            <BrandGithub size={18} />
+            &nbsp;
+          </p>
         </a>
         <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
           {/* <Image
