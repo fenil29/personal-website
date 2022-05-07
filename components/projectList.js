@@ -8,6 +8,7 @@ import VehicleSpeedDetectionImg from '../public/project-image/vehicle-speed-dete
 import SmartHomeImg from '../public/project-image/home-automation.png'
 import PomodoroTimerImg from '../public/project-image/pomodoro-timer.png'
 import VolumeLimiterImg from '../public/project-image/volume-limiter.png'
+import VacFaceImg from '../public/project-image/vacface.png'
 
 import javaScriptSvg from '../public/technology-icon/javascript.svg'
 import pythonSvg from '../public/technology-icon/python.svg'
@@ -27,7 +28,24 @@ import azureSvg from '../public/technology-icon/azure.svg'
 import dockerSvg from '../public/technology-icon/docker.svg'
 import githubActionsSvg from '../public/technology-icon/github-actions.svg'
 import elasticsearchSvg from '../public/technology-icon/elasticsearch.svg'
-let project = [
+import expoSvg from '../public/technology-icon/expo.svg'
+import chakraUiSvg from '../public/technology-icon/chakra-ui.svg'
+import kibanaSvg from '../public/technology-icon/kibana.svg'
+import digitalOceanSvg from '../public/technology-icon/digital-ocean.svg'
+import pwaSvg from '../public/technology-icon/pwa.svg'
+import uiKittenSvg from '../public/technology-icon/ui-kitten.svg'
+import antDesignSvg from '../public/technology-icon/ant-design.svg'
+import herokuSvg from '../public/technology-icon/heroku.svg'
+
+import htmlSvg from '../public/technology-icon/html-5.svg'
+import cssSvg from '../public/technology-icon/css-3.svg'
+import sassSvg from '../public/technology-icon/sass.svg'
+import nextjsSvg from '../public/technology-icon/nextjs.svg'
+import gatsbySvg from '../public/technology-icon/gatsby.svg'
+import nginxSvg from '../public/technology-icon/nginx.svg'
+import gitSvg from '../public/technology-icon/git-icon.svg'
+
+export let projects = [
   {
     title: 'Swift Search',
     type: 'Web Application',
@@ -46,8 +64,9 @@ let project = [
     technologyUsed: [
       { name: 'ReactJs', img: reactSvg },
       { name: 'ElasticSearch', img: elasticsearchSvg },
+      { name: 'Kibana', img: kibanaSvg },
       { name: 'Docker', img: dockerSvg },
-      { name: 'Azure', img: azureSvg },
+      { name: 'Digital Ocean', img: digitalOceanSvg },
     ],
   },
   {
@@ -67,12 +86,37 @@ let project = [
     technologyUsed: [
       { name: 'ReactJs', img: reactSvg },
       { name: 'NodeJs', img: nodejsSvg },
+      { name: 'Chakra Ui', img: chakraUiSvg },
       { name: 'ExpressJs', img: expressSvg },
+      { name: 'PWA', img: pwaSvg },
       { name: 'PostgreSQL', img: postgresqlSvg },
       { name: 'Redis', img: redisSvg },
       { name: 'Github Actions', img: githubActionsSvg },
       { name: 'Docker', img: dockerSvg },
       { name: 'Azure', img: azureSvg },
+    ],
+  },
+  {
+    title: 'VacFace',
+    type: 'Mobile Application',
+    projectURL: 'vacface',
+    projectImg: VacFaceImg,
+    // DetailsImage:AppointMeetDetailsImage,
+    descriptionShort:
+      'cross-platform mobile application to detect vaccine information using facial recognition to simplify the process of verifying vaccination status',
+    descriptionLong:
+      'cross-platform mobile application to detect vaccine information using facial recognition to simplify the process of verifying vaccination status',
+    button: {
+      viewCodeUrl: 'https://github.com/fenil29/Vacface_React_Native',
+      viewProjectUrl: '',
+    },
+    technologyUsed: [
+      { name: 'React Native', img: reactSvg },
+      { name: 'Expo', img: expoSvg },
+      { name: 'Ui Kitten', img: uiKittenSvg },
+      { name: 'NodeJs', img: nodejsSvg },
+      { name: 'ExpressJs', img: expressSvg },
+      { name: 'MongoDB', img: mongodbSvg },
     ],
   },
   {
@@ -91,10 +135,12 @@ let project = [
     },
     technologyUsed: [
       { name: 'ReactJs', img: reactSvg },
+      { name: 'Ant Design', img: antDesignSvg },
       { name: 'NodeJs', img: nodejsSvg },
       { name: 'ExpressJs', img: expressSvg },
       { name: 'PostgreSQL', img: postgresqlSvg },
       { name: 'JWT', img: jwtSvg },
+      { name: 'Heroku', img: herokuSvg },
     ],
   },
   {
@@ -116,6 +162,9 @@ let project = [
     technologyUsed: [
       { name: 'React Native', img: reactSvg },
       { name: 'NodeJs', img: nodejsSvg },
+      { name: 'Expo', img: expoSvg },
+      { name: 'Ui Kitten', img: uiKittenSvg },
+
       { name: 'ExpressJs', img: expressSvg },
       { name: 'PostgreSQL', img: postgresqlSvg },
       { name: 'JWT', img: jwtSvg },
@@ -142,6 +191,7 @@ let project = [
       { name: 'NodeJs', img: nodejsSvg },
       { name: 'MongoDB', img: mongodbSvg },
       { name: 'JWT', img: jwtSvg },
+      { name: 'Heroku', img: herokuSvg },
     ],
   },
   {
@@ -164,6 +214,7 @@ let project = [
       { name: 'ExpressJs', img: expressSvg },
       { name: 'NodeJs', img: nodejsSvg },
       { name: 'MongoDB', img: mongodbSvg },
+      { name: 'Heroku', img: herokuSvg },
     ],
   },
   {
@@ -245,4 +296,30 @@ let project = [
     ],
   },
 ]
-export default project
+// export default project
+
+export let technologyList = [
+  { name: 'HTML', icon: htmlSvg },
+  { name: 'CSS', icon: cssSvg },
+  { name: 'SASS', icon: sassSvg },
+  { name: 'JavaScript', icon: javaScriptSvg },
+  { name: 'Python', icon: pythonSvg },
+  { name: 'React', icon: reactSvg },
+  { name: 'Gatsby', icon: gatsbySvg },
+  { name: 'NextJs', icon: nextjsSvg },
+  { name: 'Git', icon: gitSvg },
+  { name: 'ElectronJs', icon: electronSvg },
+  { name: 'React Native', icon: reactSvg },
+  { name: 'Node Js', icon: nodejsSvg },
+  { name: 'ExpressJs', icon: expressSvg },
+  { name: 'MongoDB', icon: mongodbSvg },
+  { name: 'PostgreSql', icon: postgresqlSvg },
+  { name: 'ElasticSearch', icon: elasticsearchSvg },
+  { name: 'Redis', icon: redisSvg },
+  { name: 'Docker', icon: dockerSvg },
+  { name: 'Github Actions', icon: githubActionsSvg },
+  { name: 'NginX', icon: nginxSvg },
+  { name: 'Heroku', icon: herokuSvg },
+  { name: 'Digital Ocean', icon: digitalOceanSvg },
+  { name: 'Azure', icon: azureSvg },
+]

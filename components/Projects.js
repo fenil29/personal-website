@@ -2,7 +2,7 @@ import styles from '../styles/Projects.module.scss'
 
 import ProjectCard from './ProjectCard'
 import { useMantineColorScheme } from '@mantine/core'
-import projects from './projectList'
+import {projects} from './projectList'
 
 function Projects() {
   return (
