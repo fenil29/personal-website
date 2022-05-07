@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import ProjectCardModel from '../../components/ProjectCardModel'
-import projects from '../../components/projectList'
+import { projects } from '../../components/customValues.js'
 import NavBar from '../../components/NavBar'
 function ProjectName(props) {
   const router = useRouter()

@@ -3,7 +3,7 @@ import styles from '../styles/Technology.module.scss'
 import Image from 'next/image'
 import { Card } from '@mantine/core'
 
-import { technologyList } from './projectList'
+import { technologyList } from './customValues.js'
 function Technology() {
   return (
     <div className={styles.technologyContainer}>
