@@ -17,7 +17,7 @@ let lightModeBackgroundColor = ['#f8f9fa']
 let darkModeBackgroundColor = ['#25262b']
 export default function App(props) {
   const { Component, pageProps } = props
-  const [colorScheme, setColorScheme] = useState('light')
+  const [colorScheme, setColorScheme] = useState('dark')
   const [customBackgroundColor, setCustomBackgroundColor] = useState(
     lightModeBackgroundColor,
   )
@@ -40,7 +40,7 @@ export default function App(props) {
   return (
     <>
       <Head>
-        <title>Page title</title>
+        <title>Fenil Kaneria</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
