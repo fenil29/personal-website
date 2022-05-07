@@ -63,6 +63,7 @@ function Home() {
             // automatically={true}
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
+            layout="responsive"
             priority
           />
         </div>

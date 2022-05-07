@@ -12,6 +12,7 @@
 .textContainer {
   flex: 2;
   padding: 50px;
+  padding-bottom: 20px;
   padding-top: 100px;
 
   // display: flex;
@@ -47,5 +48,35 @@
     display: inline-block;
     margin-right: 15px;
     // margin: 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .textContainer {
+    padding: 20px;
+  }
+  .textContainer {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 620px) {
+  .textContainer {
+    h1 {
+      // font-size: 40px;
+    }
+  }
+  .textContainer {
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  .homeContainer {
+    flex-direction: column;
   }
 }

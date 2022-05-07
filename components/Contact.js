@@ -61,7 +61,7 @@ function Contact() {
     return () => {
       //   second
     }
-  }, [state.errors])
+  }, [state])
 
   return (
     <div className={styles.contactContainer}>

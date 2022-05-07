@@ -7,7 +7,7 @@ import {
   Card,
   Text,
   useMantineColorScheme,
-  Center 
+  Center,
 } from '@mantine/core'
 import Image from 'next/image'
 
@@ -19,7 +19,7 @@ function ProjectCardModel(props) {
     <>
       <Modal
         opened={props.opened}
-        onClose={() => props.setOpened(false)}
+        onClose={props.onClose}
         // title="Introduce yourself!"
         className={styles.projectDetailModel}
         // overlayOpacity={0}
@@ -87,12 +87,31 @@ function ProjectCardModel(props) {
               ))}
             </div>
             <div className={styles.buttonContainer}>
-              <Button leftIcon={<Browser size={18} />} variant="outline">
-                View Live Project
-              </Button>
-              <Button leftIcon={<BrandGithub size={18} />} variant="outline">
-                View Code
-              </Button>
+              {props.button.viewProjectUrl.length > 0 && (
+                <a
+                  href={props.button.viewProjectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button leftIcon={<Browser size={18} />} variant="outline">
+                    View Live Project
+                  </Button>
+                </a>
+              )}
+              {props.button.viewCodeUrl.length > 0 && (
+                <a
+                  href={props.button.viewCodeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    leftIcon={<BrandGithub size={18} />}
+                    variant="outline"
+                  >
+                    View Code
+                  </Button>
+                </a>
+              )}
             </div>
           </div>
         </div>

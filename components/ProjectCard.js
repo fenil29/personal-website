@@ -18,11 +18,18 @@ import { ListDetails, BrandGithub } from 'tabler-icons-react'
 
 function ProjectCard(props) {
   const [opened, setOpened] = useState(false)
-
+  const handleClose = (e) => {
+    setOpened(false)
+  }
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
   return (
     <>
-      <ProjectCardModel {...props} opened={opened} setOpened={setOpened} />
+      <ProjectCardModel
+        {...props}
+        opened={opened}
+        setOpened={setOpened}
+        onClose={handleClose}
+      />
       <div className={styles.projectCardContainer}>
         <Card
           shadow="sm"
