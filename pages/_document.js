@@ -12,7 +12,7 @@ export default class _Document extends Document {
         <Head>
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-CFPWZ43SP8`}
           />
           <script
             dangerouslySetInnerHTML={{
