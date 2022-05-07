@@ -1,11 +1,11 @@
 .projectCardContainer {
   //   flex: 1;
-  width: 350px;
+  width: 300px;
   margin: 10px;
 }
 
 .projectCard {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   //   border: 2px solid #ced4da;
   h1 {
     margin: 0px;
@@ -24,7 +24,12 @@
   margin-bottom: 5px;
 }
 .badge {
-  margin: 2px;
+  margin: 3px;
+  padding: 6px;
+  border-radius: 5px;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 12px;
 }
 .shortDescription {
   margin: 0px;

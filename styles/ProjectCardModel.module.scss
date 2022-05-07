@@ -1,0 +1,87 @@
+.projectDetailModel {
+  //   background-color: red;
+}
+.projectDetailModel {
+  :global {
+    .mantine-Modal-modal {
+      width: 90%;
+      max-width: 1000px;
+      position: relative;
+      padding: 0px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .mantine-Modal-header {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      button {
+        transform: scale(1.5);
+        //   height: 50px;
+        //   width: 50px;
+        //   font-size: 30px;
+      }
+    }
+  }
+}
+.outerContainer {
+  display: flex;
+}
+.imageContainer {
+  flex: 1;
+  display: flex;
+  //   background-color: var(--mantine-color-custom-background-0);
+}
+.detailContainer {
+  flex: 2;
+  padding: 20px;
+  padding-left: 30px;
+  h1 {
+    //   margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.technologyCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: -10px;
+}
+.technologyCard {
+  width: 95px;
+  margin: 5px;
+  //   padding: 40px;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  // padding: 30px;
+
+  :global {
+    .mantine-Card-cardSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.buttonContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}

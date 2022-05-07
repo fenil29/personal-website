@@ -1,9 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@formspree/react': ^2.2.4
   '@mantine/core': ^4.2.2
+  '@mantine/form': ^4.2.2
   '@mantine/hooks': ^4.2.2
   '@mantine/next': ^4.2.2
+  '@mantine/notifications': ^4.2.2
   eslint: 8.14.0
   eslint-config-next: 12.1.5
   next: 12.1.5
@@ -13,9 +16,12 @@ specifiers:
   tabler-icons-react: ^1.47.0
 
 dependencies:
+  '@formspree/react': 2.2.4_react@18.1.0
   '@mantine/core': 4.2.2_q6xgaiwxud7s5epz5o6ik5ahpe
+  '@mantine/form': 4.2.2_react@18.1.0
   '@mantine/hooks': 4.2.2_react@18.1.0
   '@mantine/next': 4.2.2_iw2ijl5yq2m4rs4sgxacncq4yu
+  '@mantine/notifications': 4.2.2_v5dmohwpkggin643o3ukrg3qbi
   next: 12.1.5_achxnsjje7b5gy3iikucscdeta
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
@@ -139,6 +145,27 @@ packages:
       - supports-color
     dev: true
 
+  /@formspree/core/2.6.3:
+    resolution: {integrity: sha512-MTDZAMV/iQiaHi2LEzb90LzsNkwrhOO4GKOm4p5b+pwBcj0Pj50Xb8olQ3Hrl1py1QuRwS+T8/YE7D6mDdFqnQ==}
+    dependencies:
+      '@types/promise-polyfill': 6.0.4
+      fetch-ponyfill: 6.1.1
+      promise-polyfill: 8.2.3
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@formspree/react/2.2.4_react@18.1.0:
+    resolution: {integrity: sha512-eAtWpUB3udIC/7sdmZXMJM7Cr9whI0Ehc+cOPO2BwYWbWVbAd3rtWV91OtbINFzFCdzNK3TnN/xGGx3YOQAB0Q==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      '@formspree/core': 2.6.3
+      react: 18.1.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
     engines: {node: '>=10.10.0'}
@@ -174,6 +201,14 @@ packages:
       - '@types/react'
     dev: false
 
+  /@mantine/form/4.2.2_react@18.1.0:
+    resolution: {integrity: sha512-wrC1m3TV4icaaUwfd4sUV8xyjx6MHsVNSdaP7hqALCVC3iNWLOHLxkDCZZbOn0lg1X7UX62JUqcJm6E+41PNog==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.1.0
+    dev: false
+
   /@mantine/hooks/4.2.2_react@18.1.0:
     resolution: {integrity: sha512-H580XCbgH0UnmaiHOvWGGFcFpNnXwl3zFTFLAH8fhp80AeLhIoYdI9+kvbg4G69UZlZrhr1h9naWCN9O8gjizg==}
     peerDependencies:
@@ -197,6 +232,21 @@ packages:
       - '@babel/core'
       - '@emotion/css'
       - '@types/react'
+    dev: false
+
+  /@mantine/notifications/4.2.2_v5dmohwpkggin643o3ukrg3qbi:
+    resolution: {integrity: sha512-QC0j74jcQs0zsljgjEb8UicsIFfxKayZRVlEefrBzJUbm89bs+TOzHugL2GL+IMJ1WSQKTI9YWvGXVbf8ZCzww==}
+    peerDependencies:
+      '@mantine/core': 4.2.2
+      '@mantine/hooks': 4.2.2
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@mantine/core': 4.2.2_q6xgaiwxud7s5epz5o6ik5ahpe
+      '@mantine/hooks': 4.2.2_react@18.1.0
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
+      react-transition-group: 4.4.2_ef5jwxihqo6n7gxfmzogljlgcm
     dev: false
 
   /@mantine/ssr/4.2.2_ef5jwxihqo6n7gxfmzogljlgcm:
@@ -496,6 +546,10 @@ packages:
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
+
+  /@types/promise-polyfill/6.0.4:
+    resolution: {integrity: sha512-GSCjjH6mDS8jgpT22rEOkZVqZcYj7i9AHJu4ntpvoohEpa0mLAKP/Kz3POMKqABaFsS4TyNHOeoyWpzycddcoQ==}
+    dev: false
 
   /@typescript-eslint/parser/5.10.1_eslint@8.14.0:
     resolution: {integrity: sha512-GReo3tjNBwR5RnRO0K2wDIDN31cM3MmDtgyQ85oAxAmC5K3j/g85IjP+cDfcqDsDDBf1HNKQAD0WqOYL8jXqUA==}
@@ -829,6 +883,13 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dom-helpers/5.2.1:
+    resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
+    dependencies:
+      '@babel/runtime': 7.17.9
+      csstype: 3.0.9
+    dev: false
 
   /dom-serializer/1.4.1:
     resolution: {integrity: sha512-VHwB3KfrcOOkelEG2ZOfxqLZdfkil8PtJi4P8N2MMXucZq2yLp75ClViUlOVwyoHEDjYU433Aq+5zWP61+RGag==}
@@ -1190,6 +1251,14 @@ packages:
     dependencies:
       reusify: 1.0.4
     dev: true
+
+  /fetch-ponyfill/6.1.1:
+    resolution: {integrity: sha512-rWLgTr5A44/XhvCQPYj0X9Tc+cjUaHofSM4lcwjc9MavD5lkjIhJ+h8JQlavPlTIgDpwhuRozaIykBvX9ItaSA==}
+    dependencies:
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
+    dev: false
 
   /file-entry-cache/6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
@@ -1727,6 +1796,18 @@ packages:
       - babel-plugin-macros
     dev: false
 
+  /node-fetch/2.6.7:
+    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: false
+
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
@@ -1888,13 +1969,16 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: false
 
+  /promise-polyfill/8.2.3:
+    resolution: {integrity: sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==}
+    dev: false
+
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
@@ -1952,6 +2036,20 @@ packages:
       use-latest: 1.2.1_react@18.1.0
     transitivePeerDependencies:
       - '@types/react'
+    dev: false
+
+  /react-transition-group/4.4.2_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg==}
+    peerDependencies:
+      react: '>=16.6.0'
+      react-dom: '>=16.6.0'
+    dependencies:
+      '@babel/runtime': 7.17.9
+      dom-helpers: 5.2.1
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
     dev: false
 
   /react/18.1.0:
@@ -2235,6 +2333,10 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /tr46/0.0.3:
+    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    dev: false
+
   /tsconfig-paths/3.14.1:
     resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
     dependencies:
@@ -2329,6 +2431,17 @@ packages:
     resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /webidl-conversions/3.0.1:
+    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    dev: false
+
+  /whatwg-url/5.0.0:
+    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
     dev: false
 
   /which-boxed-primitive/1.0.2:

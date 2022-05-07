@@ -1,0 +1,39 @@
+.technologyContainer {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 100px;
+}
+.technologyCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: -10px;
+}
+.technologyCard {
+  width: 140px;
+  margin: 5px;
+  //   padding: 40px;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  // padding: 30px;
+
+  :global {
+    .mantine-Card-cardSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+}

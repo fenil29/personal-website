@@ -1,0 +1,15 @@
+.contactContainer {
+  margin-top: 100px;
+}
+.formContainer {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  input::placeholder {
+    // font-size: 15px;
+  }
+  textarea::placeholder {
+    // font-size: 15px;
+    line-height: 95px;
+  }
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import {
@@ -6,6 +7,7 @@ import {
   ColorSchemeProvider,
   ColorScheme,
 } from '@mantine/core'
+import { NotificationsProvider } from '@mantine/notifications'
 
 import '../styles/globals.scss'
 
@@ -21,6 +23,7 @@ export default function App(props) {
   )
   const toggleColorScheme = (value) =>
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'))
+
   useEffect(() => {
     console.log(colorScheme)
     if (colorScheme === 'light') {
@@ -65,7 +68,9 @@ export default function App(props) {
           // },
           // }}
         >
-          <Component {...pageProps} />
+          <NotificationsProvider>
+            <Component {...pageProps} />
+          </NotificationsProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>

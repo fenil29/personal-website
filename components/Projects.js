@@ -263,15 +263,7 @@ let projects = [
 function Projects() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
   return (
-    <div
-      className={styles.projectContainer}
-      style={{
-        backgroundColor:
-          colorScheme === 'dark'
-            ? ''
-            : ' var(--mantine-color-custom-background-0)',
-      }}
-    >
+    <div className={styles.projectContainer}>
       <h1 className="title">Projects</h1>
       <div className={styles.projectCardContainer}>
         {projects.map((project, index) => (
