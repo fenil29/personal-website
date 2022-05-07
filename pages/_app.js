@@ -19,7 +19,7 @@ export default function App(props) {
   const { Component, pageProps } = props
   const [colorScheme, setColorScheme] = useState('dark')
   const [customBackgroundColor, setCustomBackgroundColor] = useState(
-    lightModeBackgroundColor,
+    darkModeBackgroundColor,
   )
   const toggleColorScheme = (value) =>
     setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'))
