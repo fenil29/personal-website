@@ -20,7 +20,7 @@
   padding: 7px;
   padding-bottom: 3px;
   border-radius: 5px;
-  z-index: 200;
+  z-index: 100002;
 }
 
 .dark-mode-icon svg {
