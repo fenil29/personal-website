@@ -44,6 +44,8 @@ import nextjsSvg from '../public/technology-icon/nextjs.svg'
 import gatsbySvg from '../public/technology-icon/gatsby.svg'
 import nginxSvg from '../public/technology-icon/nginx.svg'
 import gitSvg from '../public/technology-icon/git-icon.svg'
+import elkSvg from '../public/technology-icon/elk.svg'
+import datadogSvg from '../public/technology-icon/datadog.svg'
 
 export let projects = [
   {
@@ -315,6 +317,8 @@ export let technologyList = [
   { name: 'MongoDB', icon: mongodbSvg },
   { name: 'PostgreSql', icon: postgresqlSvg },
   { name: 'ElasticSearch', icon: elasticsearchSvg },
+  { name: 'The Elastic Stack', icon: elkSvg },
+  { name: 'DataDog', icon: datadogSvg },
   { name: 'Redis', icon: redisSvg },
   { name: 'Docker', icon: dockerSvg },
   { name: 'Github Actions', icon: githubActionsSvg },
