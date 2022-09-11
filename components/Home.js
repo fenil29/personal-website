@@ -5,7 +5,12 @@ import profilePic from '../public/fenil.png'
 import styles from '../styles/Home.module.scss'
 
 import { ActionIcon } from '@mantine/core'
-import { BrandGithub, BrandTwitter, BrandLinkedin } from 'tabler-icons-react'
+import {
+  BrandGithub,
+  BrandTwitter,
+  BrandLinkedin,
+  Code,
+} from 'tabler-icons-react'
 
 function Home() {
   return (
@@ -21,27 +26,40 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ActionIcon size="xl" variant="hover" radius="md">
-                <BrandGithub size={32} />
-              </ActionIcon>
+              <div className={styles.iconInnerContainer}>
+                <BrandGithub size={30} />
+                <span>Github</span>
+              </div>
             </a>
             <a
               href="https://linkedin.com/in/fenil-kaneria/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ActionIcon size="xl" variant="hover" radius="md">
-                <BrandLinkedin size={32} />
-              </ActionIcon>
+              <div className={styles.iconInnerContainer}>
+                <BrandLinkedin size={30} />
+                <span>LinkedIn</span>
+              </div>
             </a>
             <a
               href="https://twitter.com/FenilKaneria"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ActionIcon size="xl" variant="hover" radius="md">
-                <BrandTwitter size={32} />
-              </ActionIcon>
+              <div className={styles.iconInnerContainer}>
+                <BrandTwitter size={30} />
+                <span>Twitter</span>
+              </div>
+            </a>
+            <a
+              href="https://leetcode.com/fenil29/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.iconInnerContainer}>
+                <Code size={30} />
+                <span>LeetCode</span>
+              </div>
             </a>
           </div>
         </div>

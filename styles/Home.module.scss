@@ -42,12 +42,27 @@
 }
 
 .iconContainer {
-  margin-top: 20px;
-  // padding-left: -10px;
+  margin-top: 10px;
+  margin-left: -5px;
   button {
+  }
+  a {
     display: inline-block;
-    margin-right: 15px;
-    // margin: 20px;
+  }
+}
+.iconInnerContainer {
+  background-color: var(--mantine-color-custom-background-0);
+  margin: 5px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  // display: inline-block;
+  display: flex;
+  // width: 150px;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  svg {
+    margin-right: 5px;
   }
 }
 @media only screen and (max-width: 850px) {
