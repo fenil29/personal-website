@@ -11,6 +11,7 @@ import VolumeLimiterImg from '../public/project-image/volume-limiter.png'
 import VacFaceImg from '../public/project-image/vacface.png'
 
 import javaScriptSvg from '../public/technology-icon/javascript.svg'
+import typeScriptSvg from '../public/technology-icon/typescript.svg'
 import pythonSvg from '../public/technology-icon/python.svg'
 import opencvSvg from '../public/technology-icon/opencv.svg'
 import arduinoSvg from '../public/technology-icon/arduino.svg'
@@ -305,6 +306,7 @@ export let technologyList = [
   { name: 'CSS', icon: cssSvg },
   { name: 'SASS', icon: sassSvg },
   { name: 'JavaScript', icon: javaScriptSvg },
+  { name: 'TypeScript', icon: typeScriptSvg },
   { name: 'Python', icon: pythonSvg },
   { name: 'React', icon: reactSvg },
   { name: 'Gatsby', icon: gatsbySvg },
