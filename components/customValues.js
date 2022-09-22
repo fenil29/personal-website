@@ -17,6 +17,7 @@ import opencvSvg from '../public/technology-icon/opencv.svg'
 import arduinoSvg from '../public/technology-icon/arduino.svg'
 import androidSvg from '../public/technology-icon/android.svg'
 import nodejsSvg from '../public/technology-icon/nodejs.svg'
+import djangoSvg from '../public/technology-icon/django.svg'
 import reactSvg from '../public/technology-icon/react.svg'
 import EjsSvg from '../public/technology-icon/ejs.svg'
 import postgresqlSvg from '../public/technology-icon/postgresql.svg'
@@ -316,6 +317,7 @@ export let technologyList = [
   { name: 'React Native', icon: reactSvg },
   { name: 'Node Js', icon: nodejsSvg },
   { name: 'ExpressJs', icon: expressSvg },
+  { name: 'Django', icon: djangoSvg },
   { name: 'MongoDB', icon: mongodbSvg },
   { name: 'PostgreSql', icon: postgresqlSvg },
   { name: 'ElasticSearch', icon: elasticsearchSvg },
