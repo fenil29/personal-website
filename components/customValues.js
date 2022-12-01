@@ -10,9 +10,11 @@ import PomodoroTimerImg from '../public/project-image/pomodoro-timer.png'
 import VolumeLimiterImg from '../public/project-image/volume-limiter.png'
 import VacFaceImg from '../public/project-image/vacface.png'
 
+import javaSvg from '../public/technology-icon/java.svg'
 import javaScriptSvg from '../public/technology-icon/javascript.svg'
 import typeScriptSvg from '../public/technology-icon/typescript.svg'
 import pythonSvg from '../public/technology-icon/python.svg'
+import cSharpSvg from '../public/technology-icon/c-sharp.svg'
 import opencvSvg from '../public/technology-icon/opencv.svg'
 import arduinoSvg from '../public/technology-icon/arduino.svg'
 import androidSvg from '../public/technology-icon/android.svg'
@@ -22,6 +24,7 @@ import reactSvg from '../public/technology-icon/react.svg'
 import EjsSvg from '../public/technology-icon/ejs.svg'
 import postgresqlSvg from '../public/technology-icon/postgresql.svg'
 import expressSvg from '../public/technology-icon/express.svg'
+import dotNetSvg from '../public/technology-icon/dotnet.svg'
 import jwtSvg from '../public/technology-icon/jwt.svg'
 import mongodbSvg from '../public/technology-icon/mongodb.svg'
 import electronSvg from '../public/technology-icon/electron.svg'
@@ -39,6 +42,8 @@ import uiKittenSvg from '../public/technology-icon/ui-kitten.svg'
 import antDesignSvg from '../public/technology-icon/ant-design.svg'
 import herokuSvg from '../public/technology-icon/heroku.svg'
 
+import jestSvg from '../public/technology-icon/jest.svg'
+import playwrightSvg from '../public/technology-icon/playwright.svg'
 import htmlSvg from '../public/technology-icon/html-5.svg'
 import cssSvg from '../public/technology-icon/css-3.svg'
 import sassSvg from '../public/technology-icon/sass.svg'
@@ -306,17 +311,22 @@ export let technologyList = [
   { name: 'HTML', icon: htmlSvg },
   { name: 'CSS', icon: cssSvg },
   { name: 'SASS', icon: sassSvg },
+  { name: 'Java', icon: javaSvg },
   { name: 'JavaScript', icon: javaScriptSvg },
   { name: 'TypeScript', icon: typeScriptSvg },
   { name: 'Python', icon: pythonSvg },
+  { name: 'C#', icon: cSharpSvg },
   { name: 'React', icon: reactSvg },
   { name: 'Gatsby', icon: gatsbySvg },
   { name: 'NextJs', icon: nextjsSvg },
+  { name: 'Jest', icon: jestSvg },
+  { name: 'Playwright', icon: playwrightSvg },
   { name: 'Git', icon: gitSvg },
   { name: 'ElectronJs', icon: electronSvg },
   { name: 'React Native', icon: reactSvg },
   { name: 'Node Js', icon: nodejsSvg },
   { name: 'ExpressJs', icon: expressSvg },
+  { name: '.NET', icon: dotNetSvg },
   { name: 'Django', icon: djangoSvg },
   { name: 'MongoDB', icon: mongodbSvg },
   { name: 'PostgreSql', icon: postgresqlSvg },
