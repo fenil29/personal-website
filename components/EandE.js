@@ -8,7 +8,7 @@ function EandE() {
       <div className={styles.timelineContainer}>
         <Timeline lineWidth={3} radius="md">
         <Timeline.Item
-            title="Front-End Development Intern"
+            title="Software Developer"
             bulletSize={50}
             bullet={<Building size={25} />}
             className={styles.timelineItem}
