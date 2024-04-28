@@ -51,16 +51,6 @@ function Home() {
                 <span>Twitter</span>
               </div>
             </a>
-            <a
-              href="https://leetcode.com/fenil29/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className={styles.iconInnerContainer}>
-                <Code size={30} />
-                <span>LeetCode</span>
-              </div>
-            </a>
           </div>
         </div>
         <div className={styles.imageContainer}>
