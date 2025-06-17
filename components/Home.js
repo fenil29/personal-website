@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import Image from 'next/image'
-import profilePic from '../public/fenil.png'
-import styles from '../styles/Home.module.scss'
+import Image from "next/image";
+import profilePic from "../public/fenil.png";
+import styles from "../styles/Home.module.scss";
 
-import { ActionIcon } from '@mantine/core'
+import { ActionIcon } from "@mantine/core";
 import {
   BrandGithub,
   BrandTwitter,
   BrandLinkedin,
   Code,
-} from 'tabler-icons-react'
+} from "tabler-icons-react";
 
 function Home() {
   return (
@@ -29,6 +29,19 @@ function Home() {
               <div className={styles.iconInnerContainer}>
                 <BrandGithub size={30} />
                 <span>Github</span>
+              </div>
+            </a>
+            <a
+              href="https://leetcode.com/fenil99/"
+              target="_blank"
+              Add
+              commentMore
+              actions
+              rel="noopener noreferrer"
+            >
+              <div className={styles.iconInnerContainer}>
+                <Code size={30} />
+                <span>LeetCode</span>
               </div>
             </a>
             <a
@@ -69,7 +82,7 @@ function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
