@@ -22,6 +22,16 @@ function Home() {
           <h2>Software Engineer</h2>
           <div className={styles.iconContainer}>
             <a
+              href="https://linkedin.com/in/fenil-kaneria/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.iconInnerContainer}>
+                <BrandLinkedin size={30} />
+                <span>LinkedIn</span>
+              </div>
+            </a>
+            <a
               href="https://github.com/fenil29"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,16 +52,6 @@ function Home() {
               <div className={styles.iconInnerContainer}>
                 <Code size={30} />
                 <span>LeetCode</span>
-              </div>
-            </a>
-            <a
-              href="https://linkedin.com/in/fenil-kaneria/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className={styles.iconInnerContainer}>
-                <BrandLinkedin size={30} />
-                <span>LinkedIn</span>
               </div>
             </a>
             <a
