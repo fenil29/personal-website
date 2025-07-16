@@ -42,19 +42,6 @@ function Home() {
               </div>
             </a>
             <a
-              href="https://leetcode.com/fenil99/"
-              target="_blank"
-              Add
-              commentMore
-              actions
-              rel="noopener noreferrer"
-            >
-              <div className={styles.iconInnerContainer}>
-                <Code size={30} />
-                <span>LeetCode</span>
-              </div>
-            </a>
-            <a
               href="https://twitter.com/FenilKaneria"
               target="_blank"
               rel="noopener noreferrer"
